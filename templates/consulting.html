@@ -1,0 +1,216 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Консалтинг
+{% endblock %}
+
+{% block main %}
+    <section class="main-banner">
+        <img src="{{ url_for('static', filename='img/main/main-banner.jpg') }}" alt="Бизнес-школа «Навигатор»">
+    </section>
+    <section class="personal-consulting border-top text-center">
+        <h2 class="h3 text-left">Личная консультация:</h2>
+        <div class="personal-consulting-cards-container text-left">
+            <div class="personal-consulting-card">
+                <i class="fas fa-unlock-alt"></i>
+                <h4 class="h5">Проработка ограничивающих убеждений</h4>
+            </div>
+            <div class="personal-consulting-card">
+                <i class="fas fa-cubes"></i>
+                <h4 class="h5">Формирование ключевых ценностей и норм</h4>
+            </div>
+            <div class="personal-consulting-card">
+                <i class="fas fa-chess-king"></i>
+                <h4 class="h5">Определение стратегии развития личного бренда</h4>
+            </div>
+            <div class="personal-consulting-card">
+                <i class="fas fa-chart-line"></i>
+                <h4 class="h5">Консультация по start-up проектам</h4>
+            </div>
+        </div>
+        <a class="registration-button consulting-btn" href=""><button class="btn btn-outline-warning btn-training btn-reality">Выбрать пакет</button></a>
+    </section>
+    <section class="corp-consulting border-top text-center">
+        <h2 class="h3 text-left">Корпоративный консалтинг:</h2>
+        <div class="corp-consulting-cards-container text-left">
+            <div class="corp-consulting-card">
+                <i class="fas fa-chart-bar"></i>
+                <h4 class="h5">Аналитика элементов бизнес-структуры</h4>
+            </div>
+            <div class="corp-consulting-card">
+                <i class="fas fa-chess"></i>
+                <h4 class="h5">Создание стратегии продвижения бизнеса, миссии, целей и задач</h4>
+            </div>
+            <div class="corp-consulting-card">
+                <i class="fab fa-keycdn"></i>
+                <h4 class="h5">Определение ключевого действия для результативных изменений бизнеса</h4>
+            </div>
+            <div class="corp-consulting-card">
+                <i class="fas fa-users-cog"></i>
+                <h4 class="h5">Экспертиза эффективности работы сотрудников всех звеньев и создание плана по внутреннему обучению</h4>
+            </div>
+            <div class="corp-consulting-card">
+                <i class="fas fa-chart-pie"></i>
+                <h4 class="h5">Антикризисное управление</h4>
+            </div>
+            <div class="corp-consulting-card">
+                <i class="fas fa-marker"></i>
+                <h4 class="h5">Анализ компетенций сотрудников</h4>
+            </div>
+        </div>
+        <a class="registration-button consulting-btn" href=""><button class="btn btn-outline-warning btn-training btn-reality">Выбрать пакет</button></a>
+    </section>
+    <section class="for-who-consulting border-top">
+        <h2 class="h3">Кому подходит консультация:</h2>
+        <div class="for-who-consulting-container">
+            <div class="for-who-consulting-block">
+                <div class="inside-consulting-block">
+                    <i class="fas fa-user-tie"></i><h5 class="h6">Собственникам бизнеса</h5>
+                </div>
+            </div>
+            <div class="for-who-consulting-block">
+                <div class="inside-consulting-block">
+                    <i class="fas fa-house-user"></i><h5 class="h6">Фрилансерам</h5>
+                </div>
+            </div>
+            <div class="for-who-consulting-block">
+                <div class="inside-consulting-block">
+                    <i class="fab fa-safari"></i><h5 class="h6">Сетевым бизнесменам</h5>
+                </div>
+            </div>
+            <div class="for-who-consulting-block">
+                <div class="inside-consulting-block">
+                    <i class="fas fa-seedling"></i><h5 class="h6">Начинающим свое дело</h5>
+                </div>
+            </div>
+            <div class="for-who-consulting-block">
+               <div class="inside-consulting-block">
+                    <i class="fas fa-info-circle"></i><h5 class="h6">Инфобизнесменам</h5>
+               </div>
+            </div>
+        </div>
+    </section>
+    <section class="why-we border-top text-center">
+        <h2 class="h3 text-left">Почему мы:</h2>
+        <ul class="course-ul text-left">
+            <li><span>Авторская методика работы с убеждениями, мешающими росту</span></li>
+            <li><span>Практикующие управленцы командами от 10 до 100 человек</span></li>
+            <li><span>Реальный предпринимательский опыт в разных сферах</span></li>
+            <li><span>Эффективные менторы – мы не просто решаем проблему, мы остаемся до конца, проводим человека до осознанности его призвания и пикселя денег</span></li>
+        </ul>
+        <a class="registration-button consulting-btn" href=""><button class="btn btn-outline-warning btn-training btn-reality">Выбрать пакет</button></a>
+    </section>
+    <section class="packages border-top" id="package-of-consult">
+        <h2 class="h3">Выбор пакета консультации:</h2>
+        <table class="table-of-modules">
+                <tr class="count-of-modules">
+                    <th class="title-in-table title-3">Личная консультация <br> (2 часа)</th>
+                    <th class="title-in-table title-2">Корпоративный консалтинг <br> (2 часа)</th>
+                    <th class="title-in-table title-1">Консультация по start-up проектам <br> (2 часа)</th>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="hidden-title title-3">Личная консультация <br> (2 часа)</p>
+                        <ul class="course-ul">
+                            <li><span>Аудит текущего запроса</span></li>
+                            <li><span>Проработка</span></li>
+                            <li><span>Чек-лист с рекомендациями</span></li>
+                        </ul>
+                        <div class="price-block">
+                            <p class="text-muted third-block">Цена 5.000 &#8381;</p>
+                            <a href=""><button class="btn btn-dark choosing-btn" id="5000" name="Личная консультация">Выбрать</button></a>
+                        </div>
+                    </td>
+                    <td>
+                        <p class="hidden-title title-2">Корпоративный консалтинг <br> (2 часа)</p>
+                        <ul class="course-ul">
+                            <li><span>Аудит текущего состояния (точка А)</span></li>
+                            <li><span>Проработка основных задач</span></li>
+                            <li><span>Чек-лист ключевых действий для развития</span></li>
+                            <li><span>Поддержка в чате</span></li>
+                        </ul>
+                        <div class="price-block">
+                            <p class="text-muted second-block">Цена 10.500 &#8381;</p>
+                            <a href=""><button class="btn btn-dark choosing-btn" id="10500" name="Корпоративный консалтинг">Выбрать</button></a>
+                        </div>
+                    </td>
+                    <td>
+                        <p class="hidden-title title-1">Консультация по start-up проектам <br> (2 часа)</p>
+                        <ul class="course-ul">
+                            <li><span>Определение уникального торгового предложения</span></li>
+                            <li><span>Определение пакета документов для открытия юридического лица</span></li>
+                            <li><span>Чек –лист ключевых действий для старта</span></li>
+                        </ul>
+                        <div class="price-block">
+                            <p class="text-muted first-block">Цена 10.000 &#8381;</p>
+                            <a href=""><button class="btn btn-dark choosing-btn" id="10000" name="Консультация по start-up проектам">Выбрать</button></a>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+    </section>
+    <section class="authors-of-project-container border-top">
+        <h2 class="h3">Авторы проекта:</h2>
+        <section class="authors-of-project">
+            <div class="about-author-main">
+                <div class="part-1">
+                    <h3 class="h4">Ирина Марвах</h3>
+                    <p>С 2000 года специализируется на внедрении регулярного менеджмента и целеполагания, оценке эффективности труда, формировании организационных структур и автоматизации бизнес - процессов в коммерческой и некоммерческой сферах.</p>
+                    <div class="contacts">
+                        <div>
+                            <i class="fas fa-envelope" aria-hidden="true"></i><a href="mailto:irina.marvakh@gmail.com">irina.marvakh@gmail.com</a>
+                        </div>
+                        <div>
+                            <i class="fab fa-instagram" aria-hidden="true"></i><a href="https://www.instagram.com/irina_marvakh/" target="_blank">@irina_marvakh</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="part-2">
+                    <img src="{{ url_for('static', filename='img/main/irina-2.jpg') }}" alt="Ирина Марвах">
+                </div>
+            </div>
+            <div class="about-author-main border-top">
+                <div class="part-1">
+                    <h3 class="h4">Татьяна Ряховская</h3>
+                    <p>Обладает более чем 15-летним опытом управления как в коммерческом, так и в некоммерческом секторах. Специализируется на формировании стратегии развития бизнеса и проектов, развитии личного творческого потенциала в бизнес среде, консалтинге, в выборе ниши бизнеса и оценке рисков.</p>
+                    <div class="contacts">
+                        <div>
+                            <a href="mailto:tanyarv@cogmos.ru">tanyarv@cogmos.ru</a><i class="fas fa-envelope" aria-hidden="true"></i>
+                        </div>
+                        <div>
+                            <a href="https://www.instagram.com/ryakhovskaya.t/" target="_blank">@ryakhovskaya.t</a><i class="fab fa-instagram" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="part-2">
+                    <img src="{{ url_for('static', filename='img/main/tatyna-1.jpg') }}" alt="Татьяна Ряховская">
+                </div>
+            </div>
+        </section>
+    </section>
+    <section class="border-top form-payment" id="form-payment">
+            <h2 class="h3">Заявка на консультацию:</h2>
+            <form action="https://money.yandex.ru/eshop.xml" method="post" id="form-consulting"> <input required name="shopId" value="651404"
+                    type="hidden" /> <input required name="scid" value="1291299" type="hidden" />
+                <select id="select-package-consulting" class="select-package form-control">
+                    <option value="5000">Личная консультация</option>
+                    <option value="10500">Корпоративный консалтинг</option>
+                    <option value="10000">Консультация по start-up проектам</option>
+                </select>
+                <p class="text-muted" id="chosen-package">Выбранный пакет: <span>Личная консультация</span></p>
+                <input style="display: none" name="sum"
+                    value="5000" type="number" id="value-of-input-consulting">
+                <p class="bold">Ф.И.О (<font color="red">*</font>):</p>
+                <input class="form-control" required
+                    name="customerNumber" value="" size="64" placeholder="Иван Иванов Иванович"/>
+                <p class="bold">Номер телефона (<font color="red">*</font>):</p>
+                <input class="form-control" required name="custName" value=""
+                    size="64" placeholder="+7(999)-999-9999" />
+                <p class="bold">Почта (<font color="red">*</font>):</p>
+                <input class="form-control" required name="custEmail"
+                    value="" size="64" placeholder="ivanov@example.ru" />
+                <textarea name="orderDetails" value="" rows="5" cols="64" wrap="soft" style="display: none;">Личная консультация</textarea>
+                <input type="submit" value="Оплатить">
+            </form>
+    </section>
+{% endblock %}

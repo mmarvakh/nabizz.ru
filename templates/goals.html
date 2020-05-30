@@ -1,0 +1,160 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Изменение реальности
+{% endblock %}
+
+{% block main %}
+    <section class="main-banner">
+        <img src="{{ url_for('static', filename='img/goals/goals.jpg') }}" alt="Тренинг «Баланс целей»">
+    </section>
+    <section class="about-training border-top text-center">
+        <h2 class="h3 text-left">О чём тренинг:</h2>
+        <div class="text-left">
+            <p><span>«Баланс целей»</span> – марафон, в результате которого ты напишешь практический план по достижению целей под руководством тренера.
+            </p>
+            <p>Часто задуманное не получается из-за прежнего негативного опыта - не получилось, перепутал с мечтой, не рассчитал силы, ошибся со временем, остался без поддержки.
+Не повод расстраиваться –прими участие в марафоне по целям!</p>
+            <p><span>Цель тренинга</span> – научиться ставить умные цели, планировать, достигать результата и оставаться в сбалансированной жизни.</p>
+        </div>
+        <h3 class="h4 text-left">Задачи тренинга:</h3>
+        <ul class="course-ul text-left">
+            <li><span>Освоить методику постановки smart – целей, практика</span></li>
+            <li><span>Осознать колесо баланса и ключевые действия</span></li>
+            <li><span>Внедрить в жизнь тайм –менеджмент</span></li>
+        </ul>
+        <a class="registration-button" href=""><button class="btn btn-outline-warning btn-training btn-reality">Регистрация</button></a>
+    </section>
+    <section class="for-who-training border-top">
+        <h2 class="h3">Для кого предназначен:</h2>
+        <div class="for-who-training-container">
+            <div class="for-who-block">
+            <i class="fas fa-hand-holding-usd"></i><h4 class="h5">Бизнесменам</h4>
+            <p>Иметь положительную мотивацию для бизнеса и прорыва, чтобы достижение финансовых результатов приносило и деньги, и счастье</p>
+            </div>
+            <div class="for-who-block">
+                <i class="fas fa-seedling"></i><h4 class="h5">Начинающим предпринимателям</h4>
+                <p>Тренинг поможет настроить финансовое мышление для бесстрашного перехода в свое дело</p>
+            </div>
+            <div class="for-who-block">
+                <i class="fas fa-user-tie"></i><h4 class="h5">Управленцам и лидерам</h4>
+                <p>Точки опоры для личного развития в профессии и карьере, не ограничивая свои горизонты.</p>
+            </div>
+            <div class="for-who-block">
+                <i class="fas fa-user-check"></i><h4 class="h5">Каждому, кто готов работать над собой</h4>
+                <p>Застрял? Увидишь преграды, мешающие двигаться вперед. Чувствуешь, что занимаешься не своим делом? Поверишь в собственные силы реализовать призвание и изменить реальность</p>
+            </div>
+        </div>
+    </section>
+    <section class="program-of-training border-top text-center" id="goals-training">
+        <h2 class="h3 text-left">Программа тренинга:</h2>
+        <div class="program-of-training-container">
+            <div class="program-of-training-block">
+                <div class="inside-program">
+                    <i class="fas fa-desktop"></i><h5 class="h6">Голосовые сообщения в WhatsApp каждый день. Никаких сложных уроков – только выжимка практики на расстоянии вытянутой к смартфону руки. Ты будешь тратить в день 10 минут и шаг за шагом сформулируешь свои цели на год</h5>
+                </div>
+            </div>
+            <div class="program-of-training-block">
+                <div class="inside-program"><i class="fas fa-pen-nib"></i><h5 class="h6">3 домашних задания с обратной связью от тренеров</h5></div>
+            </div>
+            <div class="program-of-training-block">
+                <div class="inside-program">
+                    <i class="fas fa-comments"></i><h5 class="h6">Чат поддержки</h5>
+                </div>
+            </div>
+            <div class="program-of-training-block">
+                <div class="inside-program">
+                    <i class="fas fa-users"></i><h5 class="h6">2 живых вебинара для подведения итогов и вопросов – ответов</h5>
+                </div>
+            </div>
+            <div class="program-of-training-block">
+               <div class="inside-program">
+                    <i class="fas fa-clipboard"></i><h5 class="h6">Чек –листы для работы на уроке и закрепления материала</h5>
+               </div>
+            </div>
+            <div class="registration-button-circle">
+                <div class="inside-program registration-button-container">
+                    <a class="" href="">Регистрация</a>
+                </div>
+            </div>
+            <div class="program-of-training-block">
+                <div class="inside-program">
+                    <i class="fas fa-calendar-alt"></i><h5 class="h6">Марафон будет длиться 3 недели. Мы разберем цели простым языком, чтобы они перестали пылиться на полке и их достижение начнет приносить тебе удовольствие</h5>
+                </div>
+            </div>
+        </div>
+        <h3 class="h4 text-left">Темы уроков:</h3>
+        <div class="part-of-training">
+            <ul class="course-ul text-left">
+                <li><span>Отличие цели от мечты</span></li>
+                <li><span>Характеристики целей</span></li>
+                <li><span>Самооценка</span></li>
+                <li><span>Составляющие колеса баланса</span></li>
+                <li><span>Тайм –менеджмент</span></li>
+            </ul>
+            <i class="fas fa-check"></i>
+        </div>
+        <a class="registration-button" href=""><button class="btn btn-outline-warning btn-training btn-reality">Регистрация</button></a>
+    </section>
+    <section class="authors-of-project-container border-top">
+        <h2 class="h3">Авторы тренинга:</h2>
+        <section class="authors-of-project">
+            <div class="about-author-main">
+                <div class="part-1">
+                    <h3 class="h4">Ирина Марвах</h3>
+                    <p>С 2000 года специализируется на внедрении регулярного менеджмента и целеполагания, оценке эффективности труда, формировании организационных структур и автоматизации бизнес - процессов в коммерческой и некоммерческой сферах.</p>
+                    <div class="contacts">
+                        <div>
+                            <i class="fas fa-envelope" aria-hidden="true"></i><a href="mailto:irina.marvakh@gmail.com">irina.marvakh@gmail.com</a>
+                        </div>
+                        <div>
+                            <i class="fab fa-instagram" aria-hidden="true"></i><a href="https://www.instagram.com/irina_marvakh/" target="_blank">@irina_marvakh</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="part-2">
+                    <img src="{{ url_for('static', filename='img/main/irina-2.jpg') }}" alt="Ирина Марвах">
+                </div>
+            </div>
+            <div class="about-author-main border-top">
+                <div class="part-1">
+                    <h3 class="h4">Татьяна Ряховская</h3>
+                    <p>Обладает более чем 15-летним опытом управления как в коммерческом, так и в некоммерческом секторах. Специализируется на формировании стратегии развития бизнеса и проектов, развитии личного творческого потенциала в бизнес среде, консалтинге, в выборе ниши бизнеса и оценке рисков.</p>
+                    <div class="contacts">
+                        <div>
+                            <a href="mailto:tanyarv@cogmos.ru">tanyarv@cogmos.ru</a><i class="fas fa-envelope" aria-hidden="true"></i>
+                        </div>
+                        <div>
+                            <a href="https://www.instagram.com/ryakhovskaya.t/" target="_blank">@ryakhovskaya.t</a><i class="fab fa-instagram" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="part-2">
+                    <img src="{{ url_for('static', filename='img/main/tatyna-1.jpg') }}" alt="Татьяна Ряховская">
+                </div>
+            </div>
+        </section>
+    </section>
+    <section class="border-top form-payment" id="form-payment">
+            <h2 class="h3">Регистрация на тренинг:</h2>
+            <p>Стоимость тренинга - 3.500 &#8381;</p>
+            <p>Дата проведения: 2-22 марта 2020 года</p>
+            <p class="payment-info">После оплаты на указанную почту будет выслано подтверждение</p>
+            <form action="https://money.yandex.ru/eshop.xml" method="post"> <input required name="shopId" value="651404"
+                    type="hidden" /> <input required name="scid" value="1291299" type="hidden" />
+                <input style="display: none;" required name="sum"
+                    value="3500" type="number" min="3500" placeholder="3500 руб.">
+                <p class="bold">Ф.И.О (<font color="red">*</font>):</p>
+                <input class="form-control" required
+                    name="customerNumber" value="" size="64" placeholder="Иван Иванов Иванович" />
+                <p class="bold">Номер телефона (<font color="red">*</font>):</p>
+                <input class="form-control" required name="custName" value=""
+                    size="64" placeholder="+7(999)-999-9999" />
+                <p class="bold">Почта (<font color="red">*</font>):</p>
+                <input class="form-control" required name="custEmail"
+                    value="" size="64" placeholder="ivanov@example.ru" />
+                <textarea name="orderDetails" value="" rows="5" cols="64" wrap="soft" style="display: none;">БАЛАНС ЦЕЛЕЙ</textarea>
+                <input type="submit" value="Оплатить">
+            </form>
+    </section>
+{% endblock %}

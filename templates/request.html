@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Заявка на участие
+{% endblock %}
+
+{% block main %}
+    <section class="request-container">
+        <h2 class="h3">Оставить заявку:</h2>
+        <div class="request">
+            {% if package_name == 'booker' %}
+                <iframe src="{{ src_booker }}" frameborder="0" marginheight="0" marginwidth="0">Загрузка…</iframe>
+            {% elif package_name == 'pastor' %}
+                <iframe src="{{ src_pastor }}" frameborder="0" marginheight="0" marginwidth="0">Загрузка…</iframe>
+            {% elif package_name == 'administrator' %}
+                <iframe src="{{ src_admin }}" frameborder="0" marginheight="0" marginwidth="0">Загрузка…</iframe>
+            {% endif %}
+        </div>
+    </section>
+{% endblock %}

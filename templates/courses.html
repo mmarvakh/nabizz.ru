@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Курсы
+{% endblock %}
+
+{% block main %}
+    <section class="courses-container">
+        <h2 class="h3">Список курсов:</h2>
+        <div class="courses-block">
+            <div class="course border-top">
+                <h3 class="h4">Бухгалтерский курс «От Устава до Баланса»</h3>
+                <img src="{{ url_for('static', filename='img/booker-course/mini-banner.svg') }}" alt="Бухгалтерский курс «От Устава до Баланса»">
+                <p><span>Это единственная программа</span>, соединяющая бухгалтеров, администраторов и пасторов церквей в командной работе – распространять вероучение, соблюдая установленные государством правовые предписания.</p>
+                <a href="{{ url_for('booker_course') }}"><button class="btn btn-dark">Подробнее</button></a>
+            </div>
+            <div class="course border-top">
+                <h3 class="h4">Экспресс-курс «Изменение реальности»</h3>
+                <img src="{{ url_for('static', filename='img/reality/reality.jpg') }}" alt="Экспресс-курс «Изменение реальности»">
+                <p><span>Экспресс-курс «Изменение реальности»</span> – узнай о том, как изменить свою финансовую реальность при помощи изменения ограничивающих убеждений.
+Экспресс – курс «Изменение реальности» состоит из 5ти мини-уроков сконцентрированного тренинга для открытия дверей в мир изменения свободного мышления.</p>
+                <a href="{{ url_for('reality_express') }}"><button class="btn btn-dark">Подробнее</button></a>
+            </div>
+        </div>
+    </section>
+{% endblock %}

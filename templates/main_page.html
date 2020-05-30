@@ -1,0 +1,145 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Бизнес-школа «Навигатор»
+{% endblock %}
+
+{% block main %}
+    <section class="main-banner">
+        <img src="{{ url_for('static', filename='img/main/main-banner.jpg') }}" alt="Бизнес-школа «Навигатор»">
+    </section>
+    <section class="goods-container border-top">
+        <h2 class="h3">Услуги:</h2>
+        <div class="goods">
+            <div class="good"><i class="fas fa-users"></i><h4 class="h5">Тренинги</h4><p>Тренинги личностного и профессионального роста, направленные на изменение финансового мышления и глубокую проработку индивидуальных убеждений, компетенций и навыков.</p><a href="{{ url_for('trainings') }}"><button class="btn btn-outline-warning">Подробнее</button></a></div>
+        <div class="good"><i class="fas fa-pen-fancy"></i><h4 class="h5">Курсы</h4><p>Основы для быстрого запуска процесса изменения мышления и первого шага для того, чтобы двигаться в новое.</p><a href="{{ url_for('courses') }}"><button class="btn btn-outline-warning">Подробнее</button></a></div>
+        <div class="good"><i class="fas fa-chart-line"></i><h4 class="h5">Консалтинг</h4><p>Личная консультация направлена на индивидуальный разбор личностной или профессиональной проблемы. Продолжительность 1-2 часа, онлайн или оффлайн</p><a href="{{ url_for('consulting') }}"><button class="btn btn-outline-warning">Подробнее</button></a></div>
+        <div class="good"><i class="fas fa-desktop"></i><h4 class="h5">Онлайн-школа</h4><p>Авторский курс, сочетающий «твердые» профессиональные навыки менеджмента и «мягкие» инструменты, необходимые для достижения целей и успеха.</p><a href="{{ url_for('online_school') }}"><button class="btn btn-outline-warning">Подробнее</button></a></div>
+        </div>
+    </section>
+    <section class="about-us-container border-top">
+        <h2 class="h3">О проекте:</h2>
+        <div class="about-us">
+            <div class="about-us-text">
+                <p>«Навигатор» – проект, созданный для помощи людям быть счастливыми и финансово обеспеченными в реализации личного дела.</p>
+                <p>Миссия проекта - изменить экосистему бизнеса, используя потенциал осознанности, ценности и реализации талантов личностей.</p>
+                <p>Мы решаем задачи личностного, профессионального и корпоративного роста:</p>
+                <ul>
+                    <li><span>Методика подбора команды с акцентом на синергию компетенций</span></li>
+                    <li><span>Изменение финансового мышления через работу с ограничивающими убеждениями</span></li>
+                    <li><span>Обучение необходимым профессиональным навыкам, в том числе на старте проектов</span></li>
+                    <li><span>Управленческий и антикризисный консалтинг</span></li>
+                </ul>
+            </div>
+            <div class="main-video">
+                <iframe class="vid" width="100%" src="https://www.youtube.com/embed/9IfxQuhbVlU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" style="height: 515px;"></iframe>
+            </div>
+        </div>
+    </section>
+    <section class="authors-of-project-container border-top">
+        <h2 class="h3">Авторы проекта:</h2>
+        <section class="authors-of-project">
+            <div class="about-author-main">
+                <div class="part-1">
+                    <h3 class="h4">Ирина Марвах</h3>
+                    <p>С 2000 года специализируется на внедрении регулярного менеджмента и целеполагания, оценке эффективности труда, формировании организационных структур и автоматизации бизнес - процессов в коммерческой и некоммерческой сферах.</p>
+                    <div class="contacts">
+                        <div>
+                            <i class="fas fa-envelope" aria-hidden="true"></i><a href="mailto:irina.marvakh@gmail.com">irina.marvakh@gmail.com</a>
+                        </div>
+                        <div>
+                            <i class="fab fa-instagram" aria-hidden="true"></i><a href="https://www.instagram.com/irina_marvakh/" target="_blank">@irina_marvakh</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="part-2">
+                    <img src="{{ url_for('static', filename='img/main/irina-2.jpg') }}" alt="Ирина Марвах">
+                </div>
+            </div>
+            <div class="about-author-main border-top">
+                <div class="part-1">
+                    <h3 class="h4">Татьяна Ряховская</h3>
+                    <p>Обладает более чем 15-летним опытом управления как в коммерческом, так и в некоммерческом секторах. Специализируется на формировании стратегии развития бизнеса и проектов, развитии личного творческого потенциала в бизнес среде, консалтинге, в выборе ниши бизнеса и оценке рисков.</p>
+                    <div class="contacts">
+                        <div>
+                            <a href="mailto:tanyarv@cogmos.ru">tanyarv@cogmos.ru</a><i class="fas fa-envelope" aria-hidden="true"></i>
+                        </div>
+                        <div>
+                            <a href="https://www.instagram.com/ryakhovskaya.t/" target="_blank">@ryakhovskaya.t</a><i class="fab fa-instagram" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="part-2">
+                    <img src="{{ url_for('static', filename='img/main/tatyna-1.jpg') }}" alt="Татьяна Ряховская">
+                </div>
+            </div>
+        </section>
+    </section>
+    <section class="slider middle border-top">
+        <h2 class="h3">Отзывы клиентов:</h2>
+        <div class="slides">
+            <input type="radio" name="r" id="r1" class="bar" checked>
+            <input type="radio" name="r" id="r2" class="bar">
+            <input type="radio" name="r" id="r3" class="bar">
+            <input type="radio" name="r" id="r4" class="bar">
+            <input type="radio" name="r" id="r5" class="bar">
+
+            <div class="slide s1">
+                <img src="{{ url_for('static', filename='img/main/r1.png') }}" alt="Ирина, отзыв">
+            </div>
+            <div class="slide">
+                <img src="{{ url_for('static', filename='img/main/r2.png') }}" alt="Анна, отзыв">
+            </div>
+            <div class="slide">
+                <img src="{{ url_for('static', filename='img/main/r3.png') }}" alt="Риши, отзыв">
+            </div>
+            <div class="slide">
+                <img src="{{ url_for('static', filename='img/main/r4.png') }}" alt="Афанасий, отзыв">
+            </div>
+            <div class="slide">
+                <img src="{{ url_for('static', filename='img/main/r5.png') }}" alt="Татьяна, отзыв">
+            </div>
+
+            <div class="navigation">
+                <label for="r1" class="bar"></label>
+                <label for="r2" class="bar"></label>
+                <label for="r3" class="bar"></label>
+                <label for="r4" class="bar"></label>
+                <label for="r5" class="bar"></label>
+            </div>
+        </div>
+    </section>
+    <section class="form-unisender border-top">
+        <h2 class="h3">Подписаться на рассылку</h2>
+        <p class="text-muted">Бонусом Вы получите первый урок из экспресс-курса «Изменение реальности»</p>
+        <form method="POST" action="https://cp.unisender.com/ru/subscribe?hash=6aqw8bfwwqparohgbm37ado9zet7keka39xpuwuuikyjxmeiwt6io" name="subscribtion_form">
+                <div class="subscribe-form-item subscribe-form-item--input-string">
+                    <label class="subscribe-form-item__label subscribe-form-item__label--input-string subscribe-form-item__label--required">Имя <span style="color: red;">*</span></label>
+                    <input class="form-control subscribe-form-item__control subscribe-form-item__control--input-string" type="text" name="f_7413143" value="" placeholder="Иван">
+                </div>
+                <div class="subscribe-form-item subscribe-form-item--input-email">
+                    <label class="subscribe-form-item__label subscribe-form-item__label--input-email subscribe-form-item__label--required">E-mail <span style="color: red;">*</span></label>
+                    <input class="form-control subscribe-form-item__control subscribe-form-item__control--input-email" type="text" name="email" value="" placeholder="ivan@example.com">
+                </div>
+                <div class="subscribe-form-item subscribe-form-agreement-with-terms">
+                    <input class="subscribe-form-item__control subscribe-form-agreement-with-terms--checkbox" type="checkbox" style="width: 5%; cursor: pointer">
+                    <span class="subscribe-form-agreement-with-terms--text">
+                        <span style="font-size: 16px; font-family: Arial, Helvetica, sans-serif;">Я согласен(на) с политикой конфиденциальности <span style="color: red;">*</span></span>
+                    </span>
+                </div>
+                <div class="subscribe-form-item subscribe-form-agreement-with-terms">
+                    <input class="subscribe-form-item__control subscribe-form-agreement-with-terms--checkbox" type="checkbox" style="width: 5%; cursor: pointer">
+                    <span class="subscribe-form-agreement-with-terms--text">
+                             <span style="font-family:Arial,Helvetica,sans-serif; font-size:16px">Я согласен(на) получать письма и предложения от сайта www.nabizz.ru <span style="color: red;">*</span></span>
+                    </span>
+                </div>
+                <div class="subscribe-form-item subscribe-form-item--btn-submit text-center" style="margin-top: 3%;">
+                    <input class="subscribe-form-item__btn subscribe-form-item__btn--btn-submit" type="submit" value="Подписаться">
+                </div>
+                <input type="hidden" name="charset" value="UTF-8">
+                <input type="hidden" name="default_list_id" value="20020031">
+                <input type="hidden" name="overwrite" value="2">
+                <input type="hidden" name="is_v5" value="1">
+            </form>
+    </section>
+{% endblock %}
