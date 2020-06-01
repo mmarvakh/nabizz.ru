@@ -13,9 +13,15 @@
     transition: 0.5s all ease;
 }
 
-
-
 @media all and (max-width: 1200px) {
+
+    .vebinar-block {
+        height: 500px;
+    }
+
+    nav {
+        padding-top: 5%;
+    }
 
     .registration-button-circle {
         display: none;
@@ -138,6 +144,14 @@
 
 @media all and (max-width: 992px) {
 
+    .vebinar-block {
+        height: 400px;
+    }
+
+    nav {
+        padding-top: 10%;
+    }
+
     .personal-consulting-card {
         width: 49.5%;
         margin-bottom: 0.5%;
@@ -187,6 +201,10 @@
 }
 
 @media all and (max-width: 768px) {
+
+    .vebinar-block {
+        height: 300px;
+    }
 
     .course:first-child img {
         width: 100%;
@@ -299,6 +317,14 @@
 }
 
 @media all and (max-width: 500px) {
+
+    .vebinar-block {
+        height: 250px;
+    }
+
+    nav {
+        padding-top: 15%;
+    }
 
     .course-ul {
         width: 85%;

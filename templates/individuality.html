@@ -1,17 +1,13 @@
 {% extends 'base.html' %}
 
-{% block title %}
-    Изменение реальности
-{% endblock %}
-
 {% block main %}
     <section class="main-banner">
-        <img src="{{ url_for('static', filename='img/individuality/individuality.jpg') }}" alt="Тренинг «Осознанная индивидуальность»">
+        <img src="{{ url_for('static', filename='img/individuality/individuality.jpg') }}" alt="Онлайн-тренинг «Осознанная индивидуальность»">
     </section>
     <section class="about-training border-top text-center">
         <h2 class="h3 text-left">О чём тренинг:</h2>
         <div class="text-left">
-            <p><span>«Осознанная индивидуальность»</span> – профессиональный тренинг о компетенциях. В результате тренинга ты будешь точно знать «Кто ты» и каким путем достигать максимального результата в командной работе.</p>
+            <p><span>«Осознанная индивидуальность»</span> – 4-дневный онлайн-тренинг, определяющий ключевые компетенции человека и методику работы с командой. Для тех, кто хочет знать «Кто я» и «Какая команда мне нужна»</p>
             <p><span>Цель тренинга</span> – осознать свою индивидуальность для направления энергии в личное развитие и подбор команды.</p>
         </div>
         <h3 class="h4 text-left">Задачи тренинга:</h3>
@@ -20,26 +16,26 @@
             <li><span>Найти источники энергии для исключения «выгорания» из жизни и бизнеса</span></li>
             <li><span>Научиться подбирать команду с разными компетенциями для эффективности роста</span></li>
         </ul>
-        <a class="registration-button" href=""><button class="btn btn-outline-warning btn-training btn-reality">Регистрация</button></a>
+        <a class="registration-button" href=""><button class="btn btn-training btn-individuality">Регистрация</button></a>
     </section>
     <section class="for-who-training border-top">
         <h2 class="h3">Для кого предназначен:</h2>
         <div class="for-who-training-container">
             <div class="for-who-block">
-            <i class="fas fa-hand-holding-usd"></i><h4 class="h5">Бизнесменам</h4>
-            <p>Иметь положительную мотивацию для бизнеса и прорыва, чтобы достижение финансовых результатов приносило и деньги, и счастье</p>
+            <i class="fas fa-hand-holding-usd"></i><h4 class="h5">Бизнесмены</h4>
+            <p>Подбор эффективной команды, в основе которой сильные стороны разных компетенций</p>
             </div>
             <div class="for-who-block">
-                <i class="fas fa-seedling"></i><h4 class="h5">Начинающим предпринимателям</h4>
-                <p>Тренинг поможет настроить финансовое мышление для бесстрашного перехода в свое дело</p>
+                <i class="fas fa-seedling"></i><h4 class="h5">Начинающие предприниматели</h4>
+                <p>Работа с командой для достижения как корпоративных, так и личных целей. Без выгорания.</p>
             </div>
             <div class="for-who-block">
-                <i class="fas fa-user-tie"></i><h4 class="h5">Управленцам и лидерам</h4>
-                <p>Точки опоры для личного развития в профессии и карьере, не ограничивая свои горизонты.</p>
+                <i class="fas fa-user-tie"></i><h4 class="h5">Управленцы и лидеры</h4>
+                <p>Осознание главной личной компетенции для лидерства</p>
             </div>
             <div class="for-who-block">
-                <i class="fas fa-user-check"></i><h4 class="h5">Каждому, кто готов работать над собой</h4>
-                <p>Застрял? Увидишь преграды, мешающие двигаться вперед. Чувствуешь, что занимаешься не своим делом? Поверишь в собственные силы реализовать призвание и изменить реальность</p>
+                <i class="fas fa-user-check"></i><h4 class="h5">Личный бренд</h4>
+                <p>Идентифицировать себя и направлять энергию для развития в нужное русло.</p>
             </div>
         </div>
     </section>
@@ -48,7 +44,7 @@
         <div class="program-of-training-container">
             <div class="program-of-training-block">
                 <div class="inside-program">
-                    <i class="fas fa-desktop"></i><h5 class="h6">Онлайн встреча каждый день, 4 дня</h5>
+                    <i class="fas fa-desktop"></i><h5 class="h6">Онлайн живая встреча каждый день, 4 дня</h5>
                 </div>
             </div>
             <div class="program-of-training-block">
@@ -84,12 +80,12 @@
         <div class="part-of-training">
             <ul class="course-ul text-left">
                 <li><span>Самооценка</span></li>
-                <li><span>6 видов управленческих компетенций</span></li>
+                <li><span>6 видов управленческих компетенций. Какой твой стиль лидерства?</span></li>
                 <li><span>Диаграмма гармонии</span></li>
             </ul>
-            <i class="fas fa-check"></i>
+            <i class="fas fa-align-right"></i>
         </div>
-        <a class="registration-button" href=""><button class="btn btn-outline-warning btn-training btn-reality">Регистрация</button></a>
+        <a class="registration-button" href=""><button class="btn btn-training btn-individuality">Регистрация</button></a>
     </section>
     <section class="authors-of-project-container border-top">
         <h2 class="h3">Авторы тренинга:</h2>
@@ -97,7 +93,12 @@
             <div class="about-author-main">
                 <div class="part-1">
                     <h3 class="h4">Ирина Марвах</h3>
-                    <p>С 2000 года специализируется на внедрении регулярного менеджмента и целеполагания, оценке эффективности труда, формировании организационных структур и автоматизации бизнес - процессов в коммерческой и некоммерческой сферах.</p>
+                    <p style="font-size: 16px; color: #4e555b; font-weight: 500">Топ–менеджер, профессиональный управляющий</p>
+                    <ul class="course-ul">
+                        <li><span>17 лет опыта в руководстве коммерческими и некоммерческими организациями, командами от 10 до 100 человек</span></li>
+                        <li><span>Соавтор тренингов личностного и профессионального роста</span></li>
+                        <li><span>Консультант по вопросам целеполагания, делегирования, управлению и проектной деятельности</span></li>
+                    </ul>
                     <div class="contacts">
                         <div>
                             <i class="fas fa-envelope" aria-hidden="true"></i><a href="mailto:irina.marvakh@gmail.com">irina.marvakh@gmail.com</a>
@@ -114,7 +115,14 @@
             <div class="about-author-main border-top">
                 <div class="part-1">
                     <h3 class="h4">Татьяна Ряховская</h3>
-                    <p>Обладает более чем 15-летним опытом управления как в коммерческом, так и в некоммерческом секторах. Специализируется на формировании стратегии развития бизнеса и проектов, развитии личного творческого потенциала в бизнес среде, консалтинге, в выборе ниши бизнеса и оценке рисков.</p>
+                    <p style="font-size: 16px; color: #4e555b; font-weight: 500">Бизнес-тренер</p>
+                    <ul class="course-ul">
+                        <li><span>15 лет опыта практикующего финансового консультанта</span></li>
+                        <li><span>Автор тренингов личностного и профессионального роста</span></li>
+                        <li><span>Регулярно консультирует людей в вопросах выбора ниши бизнеса, оценке рисков и личного призвания</span></li>
+                        <li><span>Спикер на конференциях и семинарах</span></li>
+                        <li><span>Автор и ведущий корпоративных тренингов по командообразованию</span></li>
+                    </ul>
                     <div class="contacts">
                         <div>
                             <a href="mailto:tanyarv@cogmos.ru">tanyarv@cogmos.ru</a><i class="fas fa-envelope" aria-hidden="true"></i>
@@ -132,8 +140,8 @@
     </section>
     <section class="border-top form-payment" id="form-payment">
             <h2 class="h3">Регистрация на тренинг:</h2>
-            <p>Стоимость тренинга - 3.500 &#8381;</p>
-            <p>Дата проведения: 23-25 апреля 2020 года</p>
+            <p>Стоимость тренинга - <span class="price">3.500 &#8381;</span></p>
+            <p>Дата проведения: лето 2020 года</p>
             <p class="payment-info">После оплаты на указанную почту будет выслано подтверждение</p>
             <form action="https://money.yandex.ru/eshop.xml" method="post"> <input required name="shopId" value="651404"
                     type="hidden" /> <input required name="scid" value="1291299" type="hidden" />

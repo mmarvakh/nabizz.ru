@@ -1,9 +1,5 @@
 {% extends 'base.html' %}
 
-{% block title %}
-    Бизнес-школа «Навигатор»
-{% endblock %}
-
 {% block main %}
     <section class="main-banner">
         <img src="{{ url_for('static', filename='img/main/main-banner.jpg') }}" alt="Бизнес-школа «Навигатор»">
@@ -11,10 +7,10 @@
     <section class="goods-container border-top">
         <h2 class="h3">Услуги:</h2>
         <div class="goods">
-            <div class="good"><i class="fas fa-users"></i><h4 class="h5">Тренинги</h4><p>Тренинги личностного и профессионального роста, направленные на изменение финансового мышления и глубокую проработку индивидуальных убеждений, компетенций и навыков.</p><a href="{{ url_for('trainings') }}"><button class="btn btn-outline-warning">Подробнее</button></a></div>
-        <div class="good"><i class="fas fa-pen-fancy"></i><h4 class="h5">Курсы</h4><p>Основы для быстрого запуска процесса изменения мышления и первого шага для того, чтобы двигаться в новое.</p><a href="{{ url_for('courses') }}"><button class="btn btn-outline-warning">Подробнее</button></a></div>
-        <div class="good"><i class="fas fa-chart-line"></i><h4 class="h5">Консалтинг</h4><p>Личная консультация направлена на индивидуальный разбор личностной или профессиональной проблемы. Продолжительность 1-2 часа, онлайн или оффлайн</p><a href="{{ url_for('consulting') }}"><button class="btn btn-outline-warning">Подробнее</button></a></div>
-        <div class="good"><i class="fas fa-desktop"></i><h4 class="h5">Онлайн-школа</h4><p>Авторский курс, сочетающий «твердые» профессиональные навыки менеджмента и «мягкие» инструменты, необходимые для достижения целей и успеха.</p><a href="{{ url_for('online_school') }}"><button class="btn btn-outline-warning">Подробнее</button></a></div>
+            <div class="good"><i class="fas fa-users"></i><h4 class="h5">Тренинги</h4><p>Тренинги личностного и профессионального роста, направленные на изменение финансового мышления и глубокую проработку индивидуальных убеждений, компетенций и навыков.</p><a href="{{ url_for('trainings') }}"><button class="btn btn-training-main">Подробнее</button></a></div>
+        <div class="good"><i class="fas fa-pen-fancy"></i><h4 class="h5">Курсы</h4><p>Основы для быстрого запуска процесса изменения мышления и первого шага для того, чтобы двигаться в новое.</p><a href="{{ url_for('courses') }}"><button class="btn btn-training-main">Подробнее</button></a></div>
+        <div class="good"><i class="fas fa-chart-line"></i><h4 class="h5">Консалтинг</h4><p>Личная консультация направлена на индивидуальный разбор личностной или профессиональной проблемы. Продолжительность 1-2 часа, онлайн или оффлайн</p><a href="{{ url_for('consulting') }}"><button class="btn btn-training-main">Подробнее</button></a></div>
+        <div class="good"><i class="fas fa-desktop"></i><h4 class="h5">Онлайн-школа</h4><p>Авторский курс, сочетающий «твердые» профессиональные навыки менеджмента и «мягкие» инструменты, необходимые для достижения целей и успеха.</p><a href="{{ url_for('online_school') }}"><button class="btn btn-training-main">Подробнее</button></a></div>
         </div>
     </section>
     <section class="about-us-container border-top">

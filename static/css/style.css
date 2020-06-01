@@ -30,6 +30,9 @@ input {
 
 .top-menu {
     background-color: #00a8db;
+    position: fixed;
+    height: 40px;
+    z-index: 10000;
 }
 
 .header-info {
@@ -97,7 +100,8 @@ input {
 nav {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end
+    align-items: flex-end;
+    padding-top: 3%;
 }
 
 .nav-menu {
@@ -821,24 +825,28 @@ input[name='r'] {
 }
 
 .btn-training {
+    color: #fff;
+    background-color: #08ccf3;
     padding: 15px 50px;
     font-size: 18px;
     border-radius: 3rem;
     text-transform: uppercase;
     font-weight: 500;
+    transition: all 0.3s ease-in-out;
 }
 
-
-
-.for-who-block {
-    margin-bottom: 6%;
+.btn-training:hover {
+    transition: all 0.3s ease-in-out;
+    border: 1px solid #08ccf3;
+    color: #313131;
+    background-color: #fff;
+    box-shadow: inset 0 50px #fff;
 }
 
 .for-who-training-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
 
 .for-who-block {
@@ -847,6 +855,15 @@ input[name='r'] {
     border: 1px solid #eee;
     height: auto;
     box-shadow: 0 0 5px #eee;
+    margin-bottom: 6%;
+}
+
+#for-who-goals .for-who-block {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 0.7%;
+    border-radius: 50%;
+    margin-left: 9%;
 }
 
 .for-who-block .fas {
@@ -868,6 +885,63 @@ input[name='r'] {
 
 .for-who-block .fa-user-check {
     color: #00a8db;
+}
+
+#for-who-goals  .for-who-training-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#for-who-goals .for-who-training-block {
+    width: 280px;
+    height: 280px;
+    border: 1px solid #5ae3ff6b;
+    box-shadow: 0 0 5px #5ae3ff6b;
+    border-radius: 50%;
+    position: relative;
+    margin-bottom: 2%;
+}
+
+#for-who-goals .for-who-training-block .inside-block {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 40%;
+    text-align: center;
+}
+
+#for-who-goals .for-who-training-block:first-child .inside-block, #for-who-goals .for-who-training-block:last-child .inside-block {
+    top: 33%;
+}
+
+#for-who-goals .fas, #for-who-goals .fab {
+    font-size: 35px;
+}
+
+#for-who-goals .fa-bullseye {
+    color: red;
+}
+
+#for-who-goals .fa-hand-paper {
+    color: #ffd9c9;
+}
+
+#for-who-goals .fa-business-time {
+    color: #8b5000;
+}
+
+#for-who-goals .fa-cloud {
+    color: #5ae3ff6b;
+}
+
+#for-who-goals .fa-connectdevelop {
+    color: #3b5998;
+}
+
+#for-who-goals .fa-check-square {
+    color: #00e202;
 }
 
 .program-of-training-container {
@@ -1334,6 +1408,57 @@ input[name='r'] {
     transition: all 0.3s ease;
 }
 
+.btn-training-main {
+    background-color: #08ccf3;
+    border: 1px solid #08ccf3;
+    transition: all 0.2s ease-in-out;
+    color: #fff;
+    font-weight: 400;
+}
+
+.btn-training-main:hover {
+    background-color: #fff;
+    box-shadow: inset 0 40px #fff;
+    color: #313131;
+    transition: all 0.2s ease-in-out;
+}
+
+.price {
+    font-size: 16px;
+    padding: 0.2rem 1rem;
+    background-color: #00a8db;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 0.2rem;
+    box-shadow: 0 0 3px #00a8db;
+}
+
+.about-author-main .course-ul {
+    width: 100% !important;
+}
+
+.vebinar-block {
+    width: 100%;
+    height: 600px;
+    margin: 0 auto;
+}
+
+.vebinar-block iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.vebinars-block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.vebinar {
+    width: 550px;
+}
 
 
 

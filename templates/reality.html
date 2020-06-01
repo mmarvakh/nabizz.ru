@@ -1,17 +1,13 @@
 {% extends 'base.html' %}
 
-{% block title %}
-    Изменение реальности
-{% endblock %}
-
 {% block main %}
     <section class="main-banner">
-        <img src="{{ url_for('static', filename='img/reality/reality.jpg') }}" alt="Тренинг «Изменение реальности»">
+        <img src="{{ url_for('static', filename='img/reality/reality.jpg') }}" alt="Онлайн-тренинг «Изменение реальности»">
     </section>
     <section class="about-training border-top text-center">
         <h2 class="h3 text-left">О чём тренинг:</h2>
         <div class="text-left">
-            <p><span>«Изменение реальности»</span> – тренинг личностного роста по преодолению ограничивающих убеждений в финансовой сфере. Результатом станет изменение каждого –ты узнаешь, как достичь прорыва и быть счастливым.</p>
+            <p><span>«Изменение реальности»</span> – 4-дневный онлайн-тренинг для людей, которые хотят перейти на новый уровень и изменить ограничивающие убеждения о себе и деньгах.</p>
             <p><span>Цель тренинга</span> – освободиться от убеждений и шаблонов, навязанных окружающим миром об успехе и финансах, чтобы подняться на новый уровень дохода и свободы.</p>
         </div>
         <h3 class="h4 text-left">Задачи тренинга:</h3>
@@ -22,26 +18,26 @@
             <li><span>Поймать собственные ограничивающие убеждения и получить свободу, изменив на новые нормы</span></li>
             <li><span>Сформулировать конкретные возможности и практические шаги для достижения целей с новой нормой</span></li>
         </ul>
-        <a class="registration-button" href=""><button class="btn btn-outline-warning btn-training btn-reality">Регистрация</button></a>
+        <a class="registration-button" href=""><button class="btn btn-training btn-reality">Регистрация</button></a>
     </section>
     <section class="for-who-training border-top">
         <h2 class="h3">Для кого предназначен:</h2>
         <div class="for-who-training-container">
             <div class="for-who-block">
-            <i class="fas fa-hand-holding-usd"></i><h4 class="h5">Бизнесменам</h4>
+            <i class="fas fa-hand-holding-usd"></i><h4 class="h5">Бизнесмены</h4>
             <p>Иметь положительную мотивацию для бизнеса и прорыва, чтобы достижение финансовых результатов приносило и деньги, и счастье</p>
             </div>
             <div class="for-who-block">
-                <i class="fas fa-seedling"></i><h4 class="h5">Начинающим предпринимателям</h4>
+                <i class="fas fa-seedling"></i><h4 class="h5">Начинающие предприниматели</h4>
                 <p>Тренинг поможет настроить финансовое мышление для бесстрашного перехода в свое дело</p>
             </div>
             <div class="for-who-block">
-                <i class="fas fa-user-tie"></i><h4 class="h5">Управленцам и лидерам</h4>
+                <i class="fas fa-user-tie"></i><h4 class="h5">Управленцы и лидеры</h4>
                 <p>Точки опоры для личного развития в профессии и карьере, не ограничивая свои горизонты.</p>
             </div>
             <div class="for-who-block">
-                <i class="fas fa-user-check"></i><h4 class="h5">Каждому, кто готов работать над собой</h4>
-                <p>Застрял? Увидишь преграды, мешающие двигаться вперед. Чувствуешь, что занимаешься не своим делом? Поверишь в собственные силы реализовать призвание и изменить реальность</p>
+                <i class="fas fa-user-check"></i><h4 class="h5">Каждый, кто готов работать над собой</h4>
+                <p>Застрял? Увидишь преграды, мешающие двигаться вперед. Чувствуешь, что занимаешься не своим делом? Поверишь в собственные силы - реализовать призвание и изменить реальность</p>
             </div>
         </div>
     </section>
@@ -94,7 +90,7 @@
             </ul>
             <i class="fas fa-check"></i>
         </div>
-        <a class="registration-button" href=""><button class="btn btn-outline-warning btn-training btn-reality">Регистрация</button></a>
+        <a class="registration-button" href=""><button class="btn btn-training btn-reality">Регистрация</button></a>
     </section>
     <section class="authors-of-project-container border-top">
         <h2 class="h3">Авторы тренинга:</h2>
@@ -102,7 +98,12 @@
             <div class="about-author-main">
                 <div class="part-1">
                     <h3 class="h4">Ирина Марвах</h3>
-                    <p>С 2000 года специализируется на внедрении регулярного менеджмента и целеполагания, оценке эффективности труда, формировании организационных структур и автоматизации бизнес - процессов в коммерческой и некоммерческой сферах.</p>
+                    <p style="font-size: 16px; color: #4e555b; font-weight: 500">Топ–менеджер, профессиональный управляющий</p>
+                    <ul class="course-ul">
+                        <li><span>17 лет опыта в руководстве коммерческими и некоммерческими организациями, командами от 10 до 100 человек</span></li>
+                        <li><span>Соавтор тренингов личностного и профессионального роста</span></li>
+                        <li><span>Консультант по вопросам целеполагания, делегирования, управлению и проектной деятельности</span></li>
+                    </ul>
                     <div class="contacts">
                         <div>
                             <i class="fas fa-envelope" aria-hidden="true"></i><a href="mailto:irina.marvakh@gmail.com">irina.marvakh@gmail.com</a>
@@ -119,7 +120,14 @@
             <div class="about-author-main border-top">
                 <div class="part-1">
                     <h3 class="h4">Татьяна Ряховская</h3>
-                    <p>Обладает более чем 15-летним опытом управления как в коммерческом, так и в некоммерческом секторах. Специализируется на формировании стратегии развития бизнеса и проектов, развитии личного творческого потенциала в бизнес среде, консалтинге, в выборе ниши бизнеса и оценке рисков.</p>
+                    <p style="font-size: 16px; color: #4e555b; font-weight: 500">Бизнес-тренер</p>
+                    <ul class="course-ul">
+                        <li><span>15 лет опыта практикующего финансового консультанта</span></li>
+                        <li><span>Автор тренингов личностного и профессионального роста</span></li>
+                        <li><span>Регулярно консультирует людей в вопросах выбора ниши бизнеса, оценке рисков и личного призвания</span></li>
+                        <li><span>Спикер на конференциях и семинарах</span></li>
+                        <li><span>Автор и ведущий корпоративных тренингов по командообразованию</span></li>
+                    </ul>
                     <div class="contacts">
                         <div>
                             <a href="mailto:tanyarv@cogmos.ru">tanyarv@cogmos.ru</a><i class="fas fa-envelope" aria-hidden="true"></i>
@@ -137,13 +145,13 @@
     </section>
     <section class="border-top form-payment" id="form-payment">
             <h2 class="h3">Регистрация на тренинг:</h2>
-            <p>Стоимость тренинга - 2.800 &#8381;</p>
-            <p>Дата проведения: 17-20 февраля 2020 года</p>
+            <p>Стоимость тренинга - <span class="price">5.000 &#8381;</span></p>
+            <p>Дата проведения: лето 2020 года</p>
             <p class="payment-info">После оплаты на указанную почту будет выслано подтверждение</p>
             <form action="https://money.yandex.ru/eshop.xml" method="post"> <input required name="shopId" value="651404"
                     type="hidden" /> <input required name="scid" value="1291299" type="hidden" />
                 <input style="display: none;" required name="sum"
-                    value="2800" type="number" min="2800" placeholder="2800 руб.">
+                    value="5000" type="number" min="5000" placeholder="5000 руб.">
                 <p class="bold">Ф.И.О (<font color="red">*</font>):</p>
                 <input class="form-control" required
                     name="customerNumber" value="" size="64" placeholder="Иван Иванов Иванович" />

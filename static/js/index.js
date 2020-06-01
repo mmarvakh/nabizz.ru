@@ -69,8 +69,6 @@ if (formConsulting) {
         valueOfInputConsulting.value = button.id;
         spanInChosenPackage.textContent = button.name;
         textArea.textContent = button.name;
-        // selectedValue.options[selectedValue.selectedIndex].removeAttribute("selected");
-        // selectedValue.options[value=button.id].setAttribute("selected", "selected");
         selectedValue.selectedIndex = index;
 
     };

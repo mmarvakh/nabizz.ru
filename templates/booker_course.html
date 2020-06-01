@@ -1,9 +1,5 @@
 {% extends 'base.html' %}
 
-{% block title %}
-    Бухгалтерский курс
-{% endblock %}
-
 {% block main %}
     <section class="about-course">
             <div class="title text-center">
@@ -20,7 +16,7 @@
                     <li><span>Принимать пожертвования от физических и юридических лиц</span></li>
                     <li><span>Организовать и вести Бухгалтерский и налоговый учет в Церкви</span></li>
                 </ul>
-                <div class="img-block"><img src="{{ url_for('static', filename='img/booker-course/mini-banner.jpeg') }}" alt="От Устава до Баланса"></div>
+                <div class="img-block"><img src="{{ url_for('static', filename='img/booker-course/mini-banner.jpeg') }}" alt="Бухгалтерский курс «От Устава до Баланса»"></div>
             </section>
             <section class="course-info-banner">
                 <div class="info-banner">
@@ -207,7 +203,7 @@
                         </ul>
                         <div class="price-block">
                             <p class="text-muted third-block">Цена <span style="text-decoration: line-through">18.000</span> 15.000 &#8381;</p>
-                            <a href="{{ url_for('request_page', package_name='booker') }}"><button class="btn btn-dark choosing-btn" id="5000" name="Личная консультация">Принять участие</button></a>
+                            <a href="{{ url_for('request_page', package_name='booker', name='Бухгалтер') }}"><button class="btn btn-dark choosing-btn" id="5000" name="Личная консультация">Принять участие</button></a>
                         </div>
                     </td>
                     <td>
@@ -223,7 +219,7 @@
                         </ul>
                         <div class="price-block">
                             <p class="text-muted second-block">Цена <span style="text-decoration: line-through">12.000</span> 10.000 &#8381;</p>
-                            <a href="{{ url_for('request_page', package_name='administrator') }}"><button class="btn btn-dark choosing-btn" id="10500" name="Корпоративный консалтинг">Принять участие</button></a>
+                            <a href="{{ url_for('request_page', package_name='admin', name='Администратор') }}"><button class="btn btn-dark choosing-btn" id="10500" name="Корпоративный консалтинг">Принять участие</button></a>
                         </div>
                     </td>
                     <td>
@@ -239,7 +235,7 @@
                         </ul>
                         <div class="price-block">
                             <p class="text-muted first-block">Бесплатно</p>
-                            <a href="{{ url_for('request_page', package_name='pastor') }}"><button class="btn btn-dark choosing-btn" id="10000" name="Консультация по start-up проектам">Принять участие</button></a>
+                            <a href="{{ url_for('request_page', package_name='pastor', name='Пастор') }}"><button class="btn btn-dark choosing-btn" id="10000" name="Консультация по start-up проектам">Принять участие</button></a>
                         </div>
                     </td>
                 </tr>
