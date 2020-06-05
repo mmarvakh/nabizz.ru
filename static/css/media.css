@@ -136,13 +136,42 @@
     .good p {
         padding-bottom: 20%;
     }
-
-    .about-us-text {
-        width: 45%;
-    }
 }
 
 @media all and (max-width: 992px) {
+
+    #for-who-goals .for-who-training-block {
+        width: 240px;
+        height: 240px;
+    }
+
+    .trainings-container {
+        flex-direction: column;
+    }
+
+    .training {
+        width: 100%;
+    }
+
+    .for-who-booker-container {
+        flex-direction: column;
+    }
+
+    .text-part, .video-part {
+        width: 100%;
+    }
+
+    .about-us {
+        flex-direction: column;
+    }
+
+    .about-us-text, .main-video {
+        width: 100%;
+    }
+
+    .about-us-text {
+        margin-bottom: 3%;
+    }
 
     .vebinar-block {
         height: 400px;
@@ -202,6 +231,26 @@
 
 @media all and (max-width: 768px) {
 
+    .courses-block {
+        flex-direction: column;
+    }
+
+    .course {
+        width: 100%;
+    }
+
+    .course img {
+        width: 100%;
+    }
+
+    .slide-inside {
+        align-items: center;
+    }
+
+    .slide-inside p {
+        width: 100%;
+    }
+
     .vebinar-block {
         height: 300px;
     }
@@ -225,18 +274,6 @@
 
     .authors-of-project {
         margin-top: 5%;
-    }
-
-    .about-us {
-        flex-direction: column;
-    }
-
-    .about-us-text, .main-video {
-        width: 100%;
-    }
-
-    .about-us-text {
-        margin-bottom: 3%;
     }
 
     .about-author-main {
@@ -317,6 +354,10 @@
 }
 
 @media all and (max-width: 500px) {
+
+    .slider {
+        padding-top: 10%;
+    }
 
     .vebinar-block {
         height: 250px;

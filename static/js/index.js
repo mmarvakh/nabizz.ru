@@ -17,6 +17,28 @@ const formPayment = document.getElementById("form-payment"),
 
 const registrationBtnCircle = document.querySelectorAll(".registration-button-circle");
 
+const navigationBar = document.querySelectorAll(".navigation");
+
+if (navigationBar) {
+
+    const sliderBlock = document.querySelector(".slider");
+
+    navigationBar.forEach((elem) => {
+
+        elem.addEventListener("click", () => {
+
+            if (document.documentElement.clientWidth < 768) {
+
+                sliderBlock.scrollIntoView({behavior: "smooth"});
+
+            }
+
+        });
+
+    });
+
+}
+
 if (registrationBtnCircle) {
 
     registrationBtnCircle.forEach((elem) => {

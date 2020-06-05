@@ -2,7 +2,6 @@
 
 {% block main %}
     <section class="vebinar-container">
-        <h2 class="h3">Вебинар: {{ vebinar_name }}</h2>
         <div class="vebinar-block">
             {% if vebinar_id == '0' %}
                 <iframe class="vid" src="{{ src_0 }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
@@ -14,6 +13,8 @@
                 <iframe class="vid" src="{{ src_3 }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
             {% elif vebinar_id == '4' %}
                 <iframe class="vid" src="{{ src_4 }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+            {% elif vebinar_id == '5' %}
+                <iframe class="vid" src="{{ src_5 }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
             {% endif %}
         </div>
     </section>

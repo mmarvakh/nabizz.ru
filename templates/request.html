@@ -4,7 +4,6 @@
     <section class="request-container">
         <h2 class="h3">Оставить заявку:</h2>
         <div class="request">
-            <h3 class="h4">Выбранный пакет: {{ name }}</h3>
             {% if package_name == 'booker' %}
                 <iframe src="{{ src_booker }}" frameborder="0" marginheight="0" marginwidth="0">Загрузка…</iframe>
             {% elif package_name == 'pastor' %}

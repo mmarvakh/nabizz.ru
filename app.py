@@ -81,24 +81,25 @@ def reality_express():
     return render_template('reality-express.html', title=title)
 
 
-@app.route('/booker-course/request/<package_name>/<name>', methods=['POST', 'GET'])
-def request_page(package_name, name):
-    title = 'Пакет участия: ' + name
+@app.route('/booker-course/request/<package_name>', methods=['POST', 'GET'])
+def request_page(package_name):
+    title = 'Заявка на участие в бухгалтерском курсе'
     src_booker = 'https://docs.google.com/forms/d/e/1FAIpQLSfW_sFxlT33Djd9XybrjuVpbw5JM5SQfSwlk0EzROM2H9GX4Q/viewform?embedded=true'
     src_pastor = 'https://docs.google.com/forms/d/e/1FAIpQLSeaAKVKrcpi6NviqOPC1nfPP3bZPOOk8xzlG8-ZG22mKq-Arw/viewform?embedded=true'
     src_admin = 'https://docs.google.com/forms/d/e/1FAIpQLSfxYGEln4QaJpFOAOqW_QWh-7rJQNCxxY8v4BTfXjyTrFMMBw/viewform?embedded=true'
-    return render_template('request.html', package_name=package_name, src_admin=src_admin, src_booker=src_booker, src_pastor=src_pastor, title=title, name=name)
+    return render_template('request.html', package_name=package_name, src_admin=src_admin, src_booker=src_booker, src_pastor=src_pastor, title=title)
 
 
-@app.route('/vebinars/<vebinar_id>/<vebinar_name>', methods=['POST', 'GET'])
-def vebinar_page(vebinar_id, vebinar_name):
-    title = 'Вебинар ' + vebinar_name
+@app.route('/vebinars/<vebinar_id>', methods=['POST', 'GET'])
+def vebinar_page(vebinar_id):
+    title = 'Вебинар'
     src_0 = 'https://www.youtube.com/embed/e8DcPp_h9UQ'
     src_1 = 'https://www.youtube.com/embed/J_GJdPzrDmw'
     src_2 = 'https://www.youtube.com/embed/2ukQ6FV0Zxk'
     src_3 = 'https://www.youtube.com/embed/p8NkR3EyOfE'
     src_4 = 'https://www.youtube.com/embed/mGaYfz6bKAo'
-    return render_template('vebinar_page.html', vebinar_id=vebinar_id, vebinar_name=vebinar_name, src_0=src_0, src_1=src_1, src_2=src_2, src_3=src_3, src_4=src_4, title=title)
+    src_5 = 'https://www.youtube.com/embed/ump4mhIYnVs'
+    return render_template('vebinar_page.html', vebinar_id=vebinar_id, src_0=src_0, src_1=src_1, src_2=src_2, src_3=src_3, src_4=src_4, src_5=src_5, title=title)
 
 if __name__ == '__main__':
     app.run()

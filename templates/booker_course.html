@@ -2,8 +2,8 @@
 
 {% block main %}
     <section class="about-course">
-            <div class="title text-center">
-                <h2 class="h3">Курс «От Устава до Баланса»</h2>
+            <div class="title text-left">
+                <h2 class="h3" style="font-weight: bold">Курс «От Устава до Баланса»</h2>
             </div>
             <section class="body-course">
                 <ul class="course-ul">
@@ -44,18 +44,26 @@
         </figure>
         <section class="for-who border-top">
             <h2 class="h3">Для кого:</h2>
-            <i class="fas fa-book"></i><p><span>Бухгалтеры</span>: <br> Повышение квалификации для работы в религиозной организации.</p>
-            <i class="fas fa-user-circle"></i><p><span>Администраторы религиозных объединений и руководители</span>:
-                <br> Структурированная дорожная карта правовой и финансовой деятельности церкви.</p>
-            <i class="fas fa-cross"></i></i><p><span>Пасторы</span>: <br> Общее представление о деятельности церкви, как юридического лица.</p>
+            <div class="for-who-booker-container">
+                <div class="text-part">
+                    <i class="fas fa-book"></i><p><span>Бухгалтеры</span>: <br> Повышение квалификации для работы в религиозной организации.</p>
+                    <i class="fas fa-user-circle"></i>
+                    <p><span>Администраторы религиозных объединений и руководители</span>:
+                    <br> Структурированная дорожная карта правовой и финансовой деятельности церкви.</p>
+                    <i class="fas fa-cross"></i></i><p><span>Пасторы</span>: <br> Общее представление о деятельности церкви, как юридического лица.</p>
+                </div>
+                <div class="video-part">
+                    <iframe src="https://www.youtube.com/embed/L5yR21hx8C0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
         </section>
         <section class="program-of-course border-top">
             <h2 class="h3">Как проходит обучение:</h2>
             <section class="program-of-course-top">
                 <ul class="course-ul program-ul">
                     <li><span>С 3 августа по 30 октября 2020 года</span></li>
-                    <li><span>Онлайн уроки 2 раза в неделю</span></li>
-                    <li><span>3 модуля, 26 уроков, 58 академических часов</span></li>
+                    <li><span>Онлайн-семинары 2 раза в неделю</span></li>
+                    <li><span>3 модуля, 24 семинара, 58 академических часов</span></li>
                     <li><span>Доступ ко всем записям в течение 4х месяцев</span></li>
                     <li><span>3 онлайн встречи для ответов на вопросы по каждому модулю</span></li>
                     <li><span>Чат поддержки</span></li>
@@ -168,16 +176,6 @@
                         <p>Практикующий юрист и предприниматель. Спикер на вебинарах, конференциях и семинарах для бизнеса, НКО.</p>
                     </section>
                 </section>
-                <section class="about-author border-top">
-                    <section class="about-img">
-                        <img src="{{ url_for('static', filename='img/main/tatyna-1.jpg') }}" alt="Татьяна Ряховская">
-                    </section>
-                    <section class="about-text">
-                        <h4 class="h5">Татьяна Ряховская</h4>
-                        <p>Обладает более чем 15 летним опытом управления как в коммерческом, так и в некоммерческом секторах. Специализируется на формировании стратегии развития бизнеса и проектов, развитии личного творческого потенциала в бизнес среде, консалтинге, в выборе ниши бизнеса и оценке рисков.</p>
-                    </section>
-                </section>
-            </section>
         </section>
         <section class="border-top packages" id="booker-course-packages">
             <h2 class="h3">Выбор пакета участия:</h2>
@@ -203,7 +201,7 @@
                         </ul>
                         <div class="price-block">
                             <p class="text-muted third-block">Цена <span style="text-decoration: line-through">18.000</span> 15.000 &#8381;</p>
-                            <a href="{{ url_for('request_page', package_name='booker', name='Бухгалтер') }}"><button class="btn btn-dark choosing-btn" id="5000" name="Личная консультация">Принять участие</button></a>
+                            <a href="{{ url_for('request_page', package_name='booker') }}"><button class="btn btn-dark choosing-btn" id="5000" name="Личная консультация">Принять участие</button></a>
                         </div>
                     </td>
                     <td>
@@ -219,7 +217,7 @@
                         </ul>
                         <div class="price-block">
                             <p class="text-muted second-block">Цена <span style="text-decoration: line-through">12.000</span> 10.000 &#8381;</p>
-                            <a href="{{ url_for('request_page', package_name='admin', name='Администратор') }}"><button class="btn btn-dark choosing-btn" id="10500" name="Корпоративный консалтинг">Принять участие</button></a>
+                            <a href="{{ url_for('request_page', package_name='admin') }}"><button class="btn btn-dark choosing-btn" id="10500" name="Корпоративный консалтинг">Принять участие</button></a>
                         </div>
                     </td>
                     <td>
@@ -235,12 +233,13 @@
                         </ul>
                         <div class="price-block">
                             <p class="text-muted first-block">Бесплатно</p>
-                            <a href="{{ url_for('request_page', package_name='pastor', name='Пастор') }}"><button class="btn btn-dark choosing-btn" id="10000" name="Консультация по start-up проектам">Принять участие</button></a>
+                            <a href="{{ url_for('request_page', package_name='pastor') }}"><button class="btn btn-dark choosing-btn" id="10000" name="Консультация по start-up проектам">Принять участие</button></a>
                         </div>
                     </td>
                 </tr>
             </table>
             <p style="font-size: 14px; color: #444; margin: 4% 0 0.5% 0;">*Централизованная религиозная организация Российский объединенный Союз христиан веры евангельской (пятидесятников)</p>
             <p style="font-size: 14px; color: #444;">**Централизованная религиозная организация Ассоциация церквей христиан веры евангельской (пятидесятников) «Церкви веры»</p>
+            </section>
         </section>
 {% endblock %}
