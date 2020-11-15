@@ -69,15 +69,15 @@
             <h2 class="h3">Как проходит обучение:</h2>
             <section class="program-of-course-top">
                 <ul class="course-ul program-ul">
-                    <li><span>С 3 августа по 30 октября 2020 года</span></li>
-                    <li><span>Онлайн-семинары 2 раза в неделю</span></li>
-                    <li><span>3 модуля, 24 семинара, 58 академических часов</span></li>
-                    <li><span>Доступ ко всем записям в течение 4х месяцев</span></li>
-                    <li><span>3 онлайн встречи для ответов на вопросы по каждому модулю</span></li>
+                    <li><span>С 1.02.2020</span></li>
+                    <li><span>Запись уроков на обучающей платформе, комфортный темп обучения с любого устройства</span></li>
+                    <li><span>6 блоков, 30 уроков. Подробный материал по каждой теме</span></li>
+                    <li><span>Доступ ко всем записям в течение 4-х месяцев</span></li>
+                    <li><span>8 онлайн-встреч для ответов на вопросы по каждому блоку</span></li>
                     <li><span>Чат поддержки</span></li>
-                    <li><span>Тестирование после каждого модуля</span></li>
-                    <li><span>Сертификат, в случае успешного прохождения тестирования</span></li>
+                    <li><span>Домашние задания для закрепления материала после каждого урока</span></li>
                     <li><span>Дополнительные рабочие материалы и образцы документов, чек-листы</span></li>
+                    <li><span>Сертификат, в случае успешного прохождения курса</span></li>
                 </ul>
                 <div class="program-of-course-img">
                     <img src="{{ url_for('static', filename='img/booker-course/tree-2.png') }}" alt="Программа курса">
@@ -89,63 +89,87 @@
             <p style="color: #444; font-size: 14px;">Разработано при поддержке РОСХВЕ*</p>
             <table class="table-of-modules">
                 <tr class="count-of-modules">
-                    <th>Модуль 1</th>
-                    <th>Модуль 2</th>
-                    <th>Модуль 3</th>
+                    <th>Блок 1</th>
+                    <th>Блок 2</th>
+                    <th>Блок 3</th>
                 </tr>
                 <tr class="title-in-table">
                     <th>Создание и функционирование религиозной организации</th>
-                    <th>Бухгалтерский учёт</th>
-                    <th>Документальное оформление уставной деятельности</th>
+                    <th>Документооборот</th>
+                    <th>Финансовое планирование религиозной организации</th>
                 </tr>
                 <tr>
                     <td>
-                        <p class="hidden-title">Модуль 1 <br> Создание и функционирование религиозной организации</p>
+                        <p class="hidden-title">Блок 1 <br> Создание и функционирование религиозной организации</p>
                         <ul class="course-ul">
-                            <li><span>Выбор формы деятельности – религиозная группа или организация</span></li>
-                            <li><span>Разработка устава</span></li>
-                            <li><span>Создание и работа руководящих / исполнительных органов</span></li>
-                            <li><span>Пошаговый алгоритм регистрации религиозного объединения</span></li>
-                            <li><span>Открытие расчётного счёта и выбор способа для приема пожертвований</span></li>
+                            <li><span>Выбор формы деятельности – религиозная группа, организация, НКО</span></li>
+                            <li><span>Разработка Устава</span></li>
+                            <li><span>Структура управления в Уставе. Практика</span></li>
+                            <li><span>Разработка внутренних положений церкви</span></li>
+                        </ul>
+                    </td>
+                    <td>
+                        <p class="hidden-title">Блок 2 <br> Документооборот</p>
+                        <ul class="course-ul">
+                            <li><span>Документооборот организации</span></li>
+                            <li><span>Оформление протоколов</span></li>
+                            <li><span>Виды договоров</span></li>
+                            <li><span>Защита персональных данных</span></li>
+                        </ul>
+                    </td>
+                    <td>
+                        <p class="hidden-title">Блок 3 <br> Финансовое планирование религиозной организации</p>
+                        <ul class="course-ul">
                             <li><span>Разработка плана, бюджета и отчёта о текущей деятельности</span></li>
-                            <li><span>Обязательный минимальный документооборот: оформление внутренних приказов и протоколов</span></li>
-                            <li><span>Минимальный перечень документов для эксплуатации здания(охрана труда, план производственных работ, ремонт, пожарная безопасность)</span></li>
-                            <li><span>Виды договоров купли-продажи и услуг</span></li>
-                            <li><span>Виды договоров аренды</span></li>
-                            <li><span>Миссионерская деятельность</span></li>
-                            <li><span>Ответы на вопросы</span></li>
-                            <li><span>Тест</span></li>
-                        </ul>
-                    </td>
-                    <td>
-                        <p class="hidden-title">Модуль 2 <br> Бухгалтерский учёт</p>
-                        <ul class="course-ul">
-                            <li><span>Формирование учётной политики религиозной организации</span></li>
-                            <li><span>Учёт ОС, НМА, дебиторская и кредиторская задолженность</span></li>
-                            <li><span>Трудовая деятельность: персональные данные, волонтерские и трудовые договоры, кадровый документооборот, служебные командировки</span></li>
-                            <li><span>Пожертвования: учет операций по расчётному счёту, кассовых операций, учёт целевых средств, эквайринг, QR-коды</span></li>
-                            <li><span>Учёт расходов с подотчётными лицами</span></li>
-                            <li><span>Учёт расходов по заработной плате, пособиям по временной нетрудоспособности, отпуску</span></li>
-                            <li><span>Отчётность: бухгалтерская, налоговая, статистическая, управленческая</span></li>
-                            <li><span>Возмещение НДФЛ для благотворителей</span></li>
-                            <li><span>Ответы на вопросы</span></li>
-                            <li><span>Тест</span></li>
-                        </ul>
-                    </td>
-                    <td>
-                        <p class="hidden-title">Модуль 3 <br> Документальное оформление уставной деятельности</p>
-                        <ul class="course-ul">
                             <li><span>Оформление рабочих программ мероприятий в рамках уставной деятельности, в т.ч благотворительных</span></li>
-                            <li><span>Волонтерство</span></li>
-                            <li><span>Функционирование Трапезной и книжного стола</span></li>
-                            <li><span>Оформление реабилитационных центров</span></li>
-                            <li><span>Социальная и/или благотворительная работа</span></li>
-                            <li><span>Тайм-менеджмент и современные программы для командной работы</span></li>
+                            <li><span>Управленческий учет для руководителя</span></li>
+                            <li><span>Финансирование деятельности церкви</span></li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+            <table class="table-of-modules">
+                <tr class="count-of-modules">
+                    <th>Блок 4</th>
+                    <th>Блок 5</th>
+                    <th>Блок 6</th>
+                </tr>
+                <tr class="title-in-table">
+                    <th>Эксплуатация здания</th>
+                    <th>Миссионерская деятельность</th>
+                    <th>Бухгалтерский учет</th>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="hidden-title">Блок 4 <br> Эксплуатация здания</p>
+                        <ul class="course-ul">
+                            <li><span>Эксплуатация здания</span></li>
+                            <li><span>Пожарная безопасность</span></li>
+                            <li><span>Паспорт антитеррористической безопасности</span></li>
+                            <li><span>Проверки в религиозной организации</span></li>
+                        </ul>
+                    </td>
+                    <td>
+                        <p class="hidden-title">Блок 5 <br> Миссионерская деятельность</p>
+                        <ul class="course-ul">
+                            <li><span>Миссионерская деятельность</span></li>
+                            <li><span>Уличная евангелизация</span></li>
                             <li><span>Организация и проведение публичных, выездных, палаточных мероприятий</span></li>
-                            <li><span>Целевое финансирование: оформление проекта и отчетность, в т.ч. от иностранных жертвователей</span></li>
-                            <li><span>Получение Субсидий и грантов от государства, НКО и иных спонсоров</span></li>
-                            <li><span>Ответы на вопросы</span></li>
-                            <li><span>Тест</span></li>
+                            <li><span>Религиозная группа –документооборот и принцип работы</span></li>
+                        </ul>
+                    </td>
+                    <td>
+                        <p class="hidden-title">Блок 6 <br> Бухгалтерский учет</p>
+                        <ul class="course-ul">
+                            <li><span>Основы бухучета</span></li>
+                            <li><span>Учетная политика. Активы. План счетов</span></li>
+                            <li><span>Кадровый документооборот</span></li>
+                            <li><span>Волонтерство. Договоры подряда</span></li>
+                            <li><span>Учет расходов по заработной плате</span></li>
+                            <li><span>Пожертвования: учет операций по расчётному счёту, кассовых операций, учёт целевых средств</span></li>
+                            <li><span>Отчётность: бухгалтерская, налоговая, статистическая, управленческая</span></li>
+                            <li><span>Трапезная. Книжный стол</span></li>
+                            <li><span>Работа с программой «1C»</span></li>
                         </ul>
                     </td>
                 </tr>
@@ -172,7 +196,10 @@
                     </section>
                     <section class="about-text">
                         <h4 class="h5">Марина Матиевская</h4>
-                        <p>Главный бухгалтер РОСХВЕ*. Имеет 20-летний опыт работы в коммерческом и некоммерческом секторе. Специалист по налоговому планированию, восстановлению бухгалтерского учета и внутреннему аудиту компаний. Лектор Российского фонда образовательных программ «Экономика и Управление».</p>
+                        <p>Главный бухгалтер РОСХВЕ*. Имеет 20-летний опыт работы в коммерческом и некоммерческом секторе. Специалист по налоговому планированию, восстановлению бухгалтерского учета и внутреннему аудиту компаний. Лектор Российского фонда образовательных программ «Экономика и Управление».
+                            <br><br>
+                            Личный сайт - <a href="http://keepwelldone.tilda.ws" target="_blank">keepwelldone.ru</a>
+                        </p>
                     </section>
                 </section>
                 <section class="about-author border-top">
@@ -187,61 +214,53 @@
         </section>
         <section class="border-top packages" id="booker-course-packages">
             <h2 class="h3">Выбор пакета участия:</h2>
-            <p style="font-size: 16px; color: #444">Скидка действует до 30.06.2020 </p>
+            <p style="font-size: 16px; color: #444">Скидка действует до 01.01.2021</p>
+            <p style="font-size: 16px; color: #444">Старт 2 потока с 01.02.2021 года</p>
             <table class="table-of-modules">
                 <tr class="count-of-modules">
-                    <th class="title-in-table title-3">Бухгалтер <br> <span style="font-size: 16px">3 месяца, 28 тем</span></th>
-                    <th class="title-in-table title-2">Администратор <br> <span style="font-size: 16px">2 месяца, 20 тем</span></th>
-                    <th class="title-in-table title-1">Пастор <br> <span style="font-size: 16px">1 месяц, 5 тем</span></th>
+                    <th class="title-in-table title-3">Бухгалтер <br> <span style="font-size: 16px">30 уроков (4 мес)</span></th>
+                    <th class="title-in-table title-2">Администратор <br> <span style="font-size: 16px">20 уроков (2,5 мес)</span></th>
+                    <th class="title-in-table title-1">Пастор <br> <span style="font-size: 16px">4 урока (2 нед)</span></th>
                 </tr>
                 <tr>
                     <td>
-                        <p class="hidden-title title-3">Бухгалтер <br> <span style="font-size: 16px">3 месяца, 28 тем</span></p>
+                        <p class="hidden-title title-3">Бухгалтер <br> <span style="font-size: 16px">30 уроков (4 мес)</span></p>
                         <ul class="course-ul first-ul">
-                            <li><span><span class="bold">Доступ к модулю 1</span> <br> Создание и функционирование религиозной организации</span></li>
-                            <li><span><span class="bold">Доступ к модулю 2</span> <br> Бухгалтерский учет</span></li>
-                            <li><span><span class="bold">Доступ к модулю 3</span> <br> Документальное оформление уставной деятельности</span></li>
-                            <li><span>Проверка домашних заданий кураторами с обратной связью и комментариями</span></li>
-                            <li><span>Доступ в закрытый чат участников курса на 3 месяца</span></li>
-                            <li><span>Шаблоны, чек –листы, пакеты документов</span></li>
-                            <li><span>Zoom -встречи с ответами на вопросы и разборами ошибок от кураторов</span></li>
+                            <li><span>Доступ к Блокам 1-6 </span></li>
+                            <li><span><span class="bold">2 бонусных урока</span> <br> Тайм-менеджмент / Функции менеджмента </span></li>
                             <li><span>Сертификат</span></li>
                         </ul>
                         <div class="price-block">
+                            <p style="font-size: 14px; color: #8e8d8d">Цена до 01.01.2021</p>
                             <p class="text-muted third-block">Цена <span style="text-decoration: line-through">18.000</span> 15.000 &#8381;</p>
-                            <a href="{{ url_for('request_page', package_name='booker') }}"><button class="btn btn-dark choosing-btn" id="5000" name="Личная консультация">Принять участие</button></a>
+                            <a href="{{ url_for('request_page', package_name='booker') }}"><button class="btn btn-dark choosing-btn">Принять участие</button></a>
                         </div>
                     </td>
                     <td>
-                        <p class="hidden-title title-2">Администратор <br> <span style="font-size: 16px">2 месяца, 20 тем</span></p>
+                        <p class="hidden-title title-2">Администратор <br> <span style="font-size: 16px">20 уроков (2,5 мес)</span></p>
                         <ul class="course-ul second-ul">
-                            <li><span><span class="bold">Доступ к модулю 1</span> <br> Создание и функционирование религиозной организации</span></li>
-                            <li><span><span class="bold">Доступ к модулю 3</span> <br> Документальное оформление уставной деятельности</span></li>
-                            <li><span>Проверка домашних заданий кураторами с обратной связью и комментариями</span></li>
-                            <li><span>Доступ в закрытый чат участников курса на 3 месяца</span></li>
-                            <li><span>Шаблоны, чек –листы, пакеты документов</span></li>
-                            <li><span>Zoom -встречи с ответами на вопросы и разборами ошибок от кураторов</span></li>
+                            <li><span>Доступ к Блокам 1-5</span></li>
+                            <li><span><span class="bold">2 бонусных урока</span> <br> Тайм-менеджмент / Функции менеджмента</span></li>
                             <li><span>Сертификат</span></li>
                         </ul>
                         <div class="price-block">
+                            <p style="font-size: 14px; color: #8e8d8d">Цена до 01.01.2021</p>
                             <p class="text-muted second-block">Цена <span style="text-decoration: line-through">12.000</span> 10.000 &#8381;</p>
-                            <a href="{{ url_for('request_page', package_name='admin') }}"><button class="btn btn-dark choosing-btn" id="10500" name="Корпоративный консалтинг">Принять участие</button></a>
+                            <a href="{{ url_for('request_page', package_name='admin') }}"><button class="btn btn-dark choosing-btn">Принять участие</button></a>
                         </div>
                     </td>
                     <td>
-                        <p class="hidden-title title-1">Пастор <br> <span style="font-size: 16px">1 месяц, 5 тем</span></p>
+                        <p class="hidden-title title-1">Пастор <br> <span style="font-size: 16px">4 урока (2 нед)</span></p>
                         <ul class="course-ul third-ul">
-                            <p style="font-weight: 500">Доступ к темам:</p>
-                            <li><span>Выбор формы деятельности – религиозная группа или организация</span></li>
-                            <li><span>Разработка Устава</span></li>
-                            <li><span>Разработка Плана, бюджета и Отчета о текущей деятельности</span></li>
-                            <li><span>Миссионерская деятельность</span></li>
+                            <li><span>Доступ к Блоку 5</span></li>
+                            <li><span>Миссионерская деятельность </span></li>
+                            <li><span>Уличная евангелизация</span></li>
                             <li><span>Организация и проведение публичных, выездных, палаточных мероприятий</span></li>
-                            <li><span>Zoom-встреча с ответами на вопросы</span></li>
+                            <li><span>Религиозная группа –документооборот и принцип работы</span></li>
                         </ul>
                         <div class="price-block">
                             <p class="text-muted first-block">Бесплатно</p>
-                            <a href="{{ url_for('request_page', package_name='pastor') }}"><button class="btn btn-dark choosing-btn" id="10000" name="Консультация по start-up проектам">Принять участие</button></a>
+                            <a href="{{ url_for('request_page', package_name='pastor') }}"><button class="btn btn-dark choosing-btn">Принять участие</button></a>
                         </div>
                     </td>
                 </tr>
