@@ -1,0 +1,143 @@
+{% extends 'base.html' %}
+
+{% block meta %}
+    <meta property="og:title" content="Вебинар «Поиск внутренней мотивации»">
+    <meta property="og:site_name" content="Бизнес-школа «Навигатор»">
+    <meta property="og:url" content="https://nabizz.ru/vebinar/motivation">
+    <meta property="og:description" content="Как найти и активировать внутреннюю мотивацию для движения к поставленной цели? Людей мотивируют двигаться разные факторы: мечта, нужда, страх или безудержный стресс. Многие сталкиваются с ситуацией, когда знаешь, что «нужно сделать», но «не можешь заставить себя это сделать». На вебинаре разберем, почему попадаем в ситуации, когда ощущаем отсутствие сил шагнуть в будущее, и что делать для следующего шага без вечного «ты должен».">
+    <meta name="description" content="Как найти и активировать внутреннюю мотивацию для движения к поставленной цели? Людей мотивируют двигаться разные факторы: мечта, нужда, страх или безудержный стресс. Многие сталкиваются с ситуацией, когда знаешь, что «нужно сделать», но «не можешь заставить себя это сделать». На вебинаре разберем, почему попадаем в ситуации, когда ощущаем отсутствие сил шагнуть в будущее, и что делать для следующего шага без вечного «ты должен».">
+{% endblock %}
+
+{% block main %}
+    <section id="vebinar-find-your-deal">
+        <section class="main-banner">
+            <img src="{{ url_for('static', filename='img/vebinars/motivation/motivation.jpg') }}" alt="Вебинар «Поиск внутренней мотивации»">
+        </section>
+        <section class="about-training border-top text-center">
+            <h2 class="h3 text-left">О чём вебинар:</h2>
+            <div class="text-left" style="font-weight: 500; margin-bottom: 3%;">
+                <p>Как найти и активировать внутреннюю мотивацию для движения к поставленной цели?</p>
+                <p>Людей мотивируют двигаться разные факторы: мечта, нужда, страх или безудержный стресс.</p>
+                <p>Многие сталкиваются с ситуацией, когда знаешь, что «нужно сделать», но «не можешь заставить себя это сделать».</p>
+                <p>На вебинаре разберем, почему попадаем в ситуации, когда ощущаем отсутствие сил шагнуть в будущее, и что делать для следующего шага без вечного «ты должен».</p>
+            </div>
+            <a class="registration-button" href=""><button class="btn btn-training btn-find-your-deal">Регистрация</button></a>
+        </section>
+        <section class="for-who-training border-top">
+            <h2 class="h3">Вебинар предназначен для тех, кто:</h2>
+            <div class="for-who-training-container">
+                <div class="for-who-block">
+                <i style="color: #ffb400" class="fas fa-map-signs"></i>
+                <h4 class="h5">Не знает, что делать</h4>
+                </div>
+                <div class="for-who-block">
+                    <i class="far fa-play-circle"></i>
+                    <h4 class="h5">Боится начать новое</h4>
+                </div>
+                <div class="for-who-block">
+                    <i class="fas fa-users"></i>
+                    <h4 class="h5">Думает, что уже поздно что-то менять</h4>
+                </div>
+                <div class="for-who-block">
+                    <i style="color: #83ff00" class="fas fa-circle-notch"></i>
+                    <h4 class="h5">Устал гонять, как белка в колесе</h4>
+                </div>
+                <div class="for-who-block">
+                    <i class="fas fa-charging-station"></i>
+                    <h4 class="h5">Перегорел и ищет источник энергии на новое дело</h4>
+                </div>
+                <div class="for-who-block">
+                    <i class="fas fa-exchange-alt"></i>
+                    <h4 class="h5">Хочет изменений в жизни</h4>
+                </div>
+            </div>
+        </section>
+        <section class="program-of-training border-top text-center">
+            <h2 class="h3 text-left">Программа вебинара:</h2>
+            <div class="program-of-training-container" style="margin-bottom: 3%">
+                <div class="program-of-training-block">
+                    <div class="inside-program">
+                        <i class="fas fa-compress-arrows-alt"></i>
+                        <h5 class="h6">4 вида внутренней мотивации</h5>
+                    </div>
+                </div>
+                <div class="program-of-training-block">
+                    <div class="inside-program">
+                        <i class="fas fa-fist-raised"></i>
+                        <h5 class="h6">Где найти силы на новые идеи</h5></div>
+                </div>
+                <div class="program-of-training-block">
+                    <div class="inside-program">
+                        <i class="fas fa-battery-quarter"></i>
+                        <h5 class="h6">Как не довести себя до депрессии в трудоголизме</h5>
+                    </div>
+                </div>
+                <div class="program-of-training-block">
+                    <div class="inside-program">
+                        <i class="fas fa-bed"></i>
+                        <h5 class="h6">Что делать, когда ничего делать не хочешь</h5>
+                    </div>
+                </div>
+            </div>
+            <a class="registration-button" href=""><button class="btn btn-training btn-reality">Регистрация</button></a>
+        </section>
+        <section class="authors-of-project-container border-top">
+            <h2 class="h3">Спикер вебинара:</h2>
+            <section class="authors-of-project">
+                <div class="about-author-main">
+                    <div class="part-1">
+                        <h3 class="h4">Татьяна Ряховская</h3>
+                        <p style="font-size: 16px; color: #4e555b; font-weight: 500">Бизнес-тренер</p>
+                        <ul class="course-ul">
+                            <li><span>Коуч личностного роста</span></li>
+                            <li><span>Ежемесячно консультирует людей в вопросах выбора ниши бизнеса, оценке рисков и личного призвания.</span></li>
+                            <li><span>Обладает более чем 10 летним опытом практики в работе с глубокими убеждениями и страхами, в том числе финансовыми</span></li>
+                            <li><span>Спикер на конференциях и семинарах</span></li>
+                            <li><span>Автор тренингов личностного и профессионального роста</span></li>
+                        </ul>
+                        <div class="contacts">
+                            <div>
+                                <i class="fas fa-envelope" aria-hidden="true"></i><a href="mailto:tanyarv@cogmos.ru">tanyarv@cogmos.ru</a>
+                            </div>
+                            <div>
+                                <i class="fab fa-instagram" aria-hidden="true"></i><a href="https://www.instagram.com/ryakhovskaya.t/" target="_blank">@ryakhovskaya.t</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="part-2">
+                        <img src="{{ url_for('static', filename='img/main/tatyna-1.jpg') }}" alt="Татьяна Ряховская">
+                    </div>
+                </div>
+                <div class="about-author-main" style="display: none">
+                    <div class="part-1">
+                        <h3 class="h4">Ирина Марвах</h3>
+                        <p style="font-size: 16px; color: #4e555b; font-weight: 500">Топ–менеджер, профессиональный управляющий</p>
+                        <ul class="course-ul">
+                            <li><span>Делает любимое дело более 17 лет, приводит дела в порядок в коммерческих и некоммерческих организациях</span></li>
+                            <li><span>Изменила карьеру химика на профессию управляющего, по пути вышла замуж, родила 3–х детей, изменила представление о декрете и получила степень MBA</span></li>
+                            <li><span>Спикер на конференциях и семинарах о поиске призвания, ценности человека и осознанной жизни</span></li>
+                            <li><span>Соавтор тренингов личностного и профессионального роста</span></li>
+                            <li><span>Партнер «Бизнес–школы Навигатор»</span></li>
+                        </ul>
+                        <div class="contacts">
+                            <div>
+                                <i class="fas fa-envelope" aria-hidden="true"></i><a href="mailto:irina.marvakh@gmail.com">irina.marvakh@gmail.com</a>
+                            </div>
+                            <div>
+                                <i class="fab fa-instagram" aria-hidden="true"></i><a href="https://www.instagram.com/irina_marvakh/" target="_blank">@irina_marvakh</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="part-2">
+                        <img src="{{ url_for('static', filename='img/main/irina-2.jpg') }}" alt="Ирина Марвах">
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="border-top form-submit" id="form-payment">
+            <h2 class="h3">Регистрация на вебинар</h2>
+            <h3 class="h4">БЕСПЛАТНО 19.06.2020 в 20-00 </h3>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdqVfAVtHzHBJRhftewjvS0fxaD3IROMmfEuNnSceSC_6Gjfg/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Загрузка…</iframe>
+        </section>
+    </section>
+{% endblock %}

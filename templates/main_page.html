@@ -1,5 +1,20 @@
 {% extends 'base.html' %}
 
+{% block reCaptcha %}
+    <script>
+        var onSubmit = function(token) {
+            console.log('success!');
+        };
+
+        var onloadCallback = function() {
+            grecaptcha.render('submit', {
+                'sitekey' : '{{ site_key }}',
+                'callback' : onSubmit
+            });
+        };
+    </script>
+{% endblock %}
+
 {% block main %}
     <section class="main-banner">
         <img src="{{ url_for('static', filename='img/main/main-banner.jpg') }}" alt="Бизнес-школа «Навигатор»">
@@ -10,16 +25,16 @@
             <div class="good"><i class="fas fa-users"></i><h4 class="h5">Тренинги</h4><p>Тренинги личностного и профессионального роста, направленные на изменение финансового мышления и глубокую проработку индивидуальных убеждений, компетенций и навыков.</p><a href="{{ url_for('trainings') }}"><button class="btn btn-training-main">Подробнее</button></a></div>
         <div class="good"><i class="fas fa-pen-fancy"></i><h4 class="h5">Курсы</h4><p>Основы для быстрого запуска процесса изменения мышления и первого шага для того, чтобы двигаться в новое.</p><a href="{{ url_for('courses') }}"><button class="btn btn-training-main">Подробнее</button></a></div>
         <div class="good"><i class="fas fa-chart-line"></i><h4 class="h5">Консалтинг</h4><p>Личная консультация направлена на индивидуальный разбор личностной или профессиональной проблемы. Продолжительность 1-2 часа, онлайн или оффлайн</p><a href="{{ url_for('consulting') }}"><button class="btn btn-training-main">Подробнее</button></a></div>
-        <div class="good"><i class="fas fa-desktop"></i><h4 class="h5">Онлайн-школа</h4><p>Авторский курс, сочетающий «твердые» профессиональные навыки менеджмента и «мягкие» инструменты, необходимые для достижения целей и успеха.</p><a href="{{ url_for('online_school') }}"><button class="btn btn-training-main">Подробнее</button></a></div>
+        <div class="good"><i class="fas fa-desktop"></i><h4 class="h5">Онлайн-школа</h4><p>Авторский курс, сочетающий «твердые» профессиональные навыки менеджмента и «мягкие» инструменты, необходимые для достижения целей и успеха.</p><a href="{{ url_for('school') }}"><button class="btn btn-training-main">Подробнее</button></a></div>
         </div>
     </section>
     <section class="about-us-container border-top">
         <h2 class="h3">О проекте:</h2>
         <div class="about-us">
             <div class="about-us-text">
-                <p>«Навигатор» – проект, созданный для помощи людям быть счастливыми и финансово обеспеченными в реализации личного дела.</p>
+                <p class="bold">«Навигатор» – проект, созданный для помощи людям быть счастливыми и финансово обеспеченными в реализации личного дела.</p>
                 <p>Миссия проекта - изменить экосистему бизнеса, используя потенциал осознанности, ценности и реализации талантов личностей.</p>
-                <p>Мы решаем задачи личностного, профессионального и корпоративного роста:</p>
+                <p class="bold">Мы решаем задачи личностного, профессионального и корпоративного роста:</p>
                 <ul>
                     <li><span>Методика подбора команды с акцентом на синергию компетенций</span></li>
                     <li><span>Изменение финансового мышления через работу с ограничивающими убеждениями</span></li>
@@ -160,7 +175,8 @@
     <section class="form-unisender border-top">
         <h2 class="h3">Подписаться на рассылку</h2>
         <p class="text-muted">Бонусом Вы получите первый урок из экспресс-курса «Изменение реальности»</p>
-        <form method="POST" action="https://cp.unisender.com/ru/subscribe?hash=6aqw8bfwwqparohgbm37ado9zet7keka39xpuwuuikyjxmeiwt6io" name="subscribtion_form">
+        <form method="POST" action="https://cp.unisender.com/ru/subscribe?hash=6aqw8bfwwqparohgbm37ado9zet7keka39xpuwuuikyjxmeiwt6io" name="subscribtion_form" id="subscribe-form">
+                <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
                 <div class="subscribe-form-item subscribe-form-item--input-string">
                     <label class="subscribe-form-item__label subscribe-form-item__label--input-string subscribe-form-item__label--required">Имя <span style="color: red;">*</span></label>
                     <input class="form-control subscribe-form-item__control subscribe-form-item__control--input-string" type="text" name="f_7413143" value="" placeholder="Иван">
@@ -182,12 +198,13 @@
                     </span>
                 </div>
                 <div class="subscribe-form-item subscribe-form-item--btn-submit text-center" style="margin-top: 3%;">
-                    <input class="subscribe-form-item__btn subscribe-form-item__btn--btn-submit" type="submit" value="Подписаться">
+                    <input id="submit" class="subscribe-form-item__btn subscribe-form-item__btn--btn-submit" type="submit" value="Подписаться">
                 </div>
                 <input type="hidden" name="charset" value="UTF-8">
                 <input type="hidden" name="default_list_id" value="20020031">
                 <input type="hidden" name="overwrite" value="2">
                 <input type="hidden" name="is_v5" value="1">
             </form>
+            <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
     </section>
 {% endblock %}

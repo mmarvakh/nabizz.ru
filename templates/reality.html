@@ -1,5 +1,13 @@
 {% extends 'base.html' %}
 
+{% block meta %}
+    <meta property="og:title" content="Тренинг «Изменение реальности»">
+    <meta property="og:site_name" content="Бизнес-школа «Навигатор»">
+    <meta property="og:url" content="https://nabizz.ru/reality">
+    <meta property="og:description" content="«Изменение реальности» – 4-дневный онлайн-тренинг для людей, которые хотят перейти на новый уровень и изменить ограничивающие убеждения о себе и деньгах.">
+    <meta name="description" content="«Изменение реальности» – 4-дневный онлайн-тренинг для людей, которые хотят перейти на новый уровень и изменить ограничивающие убеждения о себе и деньгах.">
+{% endblock %}
+
 {% block main %}
     <section class="main-banner">
         <img src="{{ url_for('static', filename='img/reality/reality.jpg') }}" alt="Онлайн-тренинг «Изменение реальности»">
@@ -10,34 +18,34 @@
             <p><span>«Изменение реальности»</span> – 4-дневный онлайн-тренинг для людей, которые хотят перейти на новый уровень и изменить ограничивающие убеждения о себе и деньгах.</p>
             <p><span>Цель тренинга</span> – освободиться от убеждений и шаблонов, навязанных окружающим миром об успехе и финансах, чтобы подняться на новый уровень дохода и свободы.</p>
         </div>
-        <h3 class="h4 text-left">Задачи тренинга:</h3>
+        <h3 class="h4 text-left">Этот тренинг нужен потому что, у тебя:</h3>
         <ul class="course-ul text-left">
-            <li><span>Актуализировать важность душевной и духовной сферы для достижения результата</span></li>
-            <li><span>Выявить ключевую мотивацию в работе</span></li>
-            <li><span>Определить понятие личной успешности</span></li>
-            <li><span>Поймать собственные ограничивающие убеждения и получить свободу, изменив на новые нормы</span></li>
-            <li><span>Сформулировать конкретные возможности и практические шаги для достижения целей с новой нормой</span></li>
+            <li><span>Есть отличная идея, но из года в год ты убеждаешь себя, что у тебя нет: денег, времени, партнёра и связей</span></li>
+            <li><span>Низкая самооценка, ты постоянно стоишь в сторонке, хотя точно знаешь, что можешь больше и лучше</span></li>
+            <li><span>Ты в постоянном поиске себя, своего дела или лучшей жизни. Но за столько лет так и не нашёл то, что искал</span></li>
+            <li><span>Есть ограничения в каких–то сферах: финансы, личные отношения, коммуникация, успешность, карьерный рост</span></li>
+            <li><span>Тебе нужен мощный стимул к изменению своей жизни и реализации своих давних и новых целей</span></li>
         </ul>
         <a class="registration-button" href=""><button class="btn btn-training btn-reality">Регистрация</button></a>
     </section>
     <section class="for-who-training border-top">
-        <h2 class="h3">Для кого предназначен:</h2>
+        <h2 class="h3">Узнаёшь себя?</h2>
         <div class="for-who-training-container">
             <div class="for-who-block">
-            <i class="fas fa-hand-holding-usd"></i><h4 class="h5">Бизнесмены</h4>
-            <p>Иметь положительную мотивацию для бизнеса и прорыва, чтобы достижение финансовых результатов приносило и деньги, и счастье</p>
+            <i class="fas fa-biking"></i><h4 class="h5">Устал гонять по жизни как белка в колесе?</h4>
+            <p>Мечтаешь быть собранным и целеустремленным, но находишь себя в суете и неудовлетворенности. Заниматься любимым делом гораздо выгоднее и приятнее. Давай, мы покажем, как найти ограничения и изменить их для изменения качества жизни.</p>
             </div>
             <div class="for-who-block">
-                <i class="fas fa-seedling"></i><h4 class="h5">Начинающие предприниматели</h4>
-                <p>Тренинг поможет настроить финансовое мышление для бесстрашного перехода в свое дело</p>
+                <i class="fas fa-seedling"></i><h4 class="h5">Перегорел и ищешь источник энергии на новое дело</h4>
+                <p>Но почему-то остаешься на месте, погрязая в рутине. Да, порой бывает сложно раскачать себя. Но что будет с твоей жизнью, если не делать изменений? Мы заем как помочь и научить справляться с апатией.</p>
             </div>
             <div class="for-who-block">
-                <i class="fas fa-user-tie"></i><h4 class="h5">Управленцы и лидеры</h4>
-                <p>Точки опоры для личного развития в профессии и карьере, не ограничивая свои горизонты.</p>
+                <i class="fas fa-user-tie"></i><h4 class="h5">Мечтаешь изменить себя</h4>
+                <p>Сделать свою жизнь ярче и наполнить ее яркими эмоциями. Ты ведь точно знаешь, в глубине души, что создан для творческих и интересных проектов. Ты когда–то мечтал изменить мир, но что –то оборвало эти желания. Или кто–то… Мы не сможем вернуть назад время, но сможем научить работать с установками прошлой жизни и изменять их на новые нормы для достижения твоей мечты.</p>
             </div>
             <div class="for-who-block">
-                <i class="fas fa-user-check"></i><h4 class="h5">Каждый, кто готов работать над собой</h4>
-                <p>Застрял? Увидишь преграды, мешающие двигаться вперед. Чувствуешь, что занимаешься не своим делом? Поверишь в собственные силы - реализовать призвание и изменить реальность</p>
+                <i class="fas fa-hand-holding-usd"></i><h4 class="h5">Хочешь больше зарабатывать</h4>
+                <p>Найдешь преграды, мешающие двигаться вперед и ограничивающие финансовые потоки. Кто–то зарабатывает больше тебя, но это не карма твоей жизни. Ты определяешь финансовые потоки в твоей жизни, а не экономическая цепочка, но ты утерял эту способность, поверив в другое качество жизни и низкие планки. Давай вернем ее обратно и ты убедишься как духовная и душевная сферы влияет на достижение результата.</p>
             </div>
         </div>
     </section>
@@ -46,25 +54,37 @@
         <div class="program-of-training-container">
             <div class="program-of-training-block">
                 <div class="inside-program">
-                    <i class="fas fa-desktop"></i><h5 class="h6">Онлайн встреча каждый день, 4 дня</h5>
-                </div>
-            </div>
-            <div class="program-of-training-block">
-                <div class="inside-program"><i class="fas fa-pen-nib"></i><h5 class="h6">Домашнее задание</h5></div>
-            </div>
-            <div class="program-of-training-block">
-                <div class="inside-program">
-                    <i class="fas fa-comments"></i><h5 class="h6">Чат поддержки</h5>
+                    <i class="fas fa-desktop"></i>
+                    <h5 class="h6">Онлайн встреча каждый день</h5>
+                    <p>4 дня / 1 час / в 20:00</p>
                 </div>
             </div>
             <div class="program-of-training-block">
                 <div class="inside-program">
-                    <i class="fas fa-users"></i><h5 class="h6">Групповая работа с индивидуальным подходом</h5>
+                	<i class="fas fa-pen-nib"></i>
+                	<h5 class="h6">Домашнее задание</h5>
+                	<p>С обратной связью от тренера</p>
+                </div>
+            </div>
+            <div class="program-of-training-block">
+                <div class="inside-program">
+                    <i class="fas fa-code-branch"></i>
+                    <h5 class="h6">Мышление</h5>
+                    <p>Авторская программа, благодаря которой происходит изменение ограничивающей программы успешности</p>
+                </div>
+            </div>
+            <div class="program-of-training-block">
+                <div class="inside-program">
+                    <i class="fas fa-users"></i>
+                    <h5 class="h6">Окружение</h5>
+                    <p>Участие в чате, где тебя будут поддерживать кураторы и другие участники тренинга</p>
                 </div>
             </div>
             <div class="program-of-training-block">
                <div class="inside-program">
-                    <i class="fas fa-clipboard"></i><h5 class="h6">Чек –листы для работы на уроке и закрепления материала</h5>
+                    <i class="fas fa-clipboard"></i>
+                    <h5 class="h6">Чек–листы</h5>
+                    <p>Останутся с тобой далее для закрепления материала и индивидуальных решений</p>
                </div>
             </div>
             <div class="registration-button-circle">
@@ -74,7 +94,9 @@
             </div>
             <div class="program-of-training-block">
                 <div class="inside-program">
-                    <i class="fas fa-clock"></i><h5 class="h6">Длительность встречи: 1 час, в 20:00</h5>
+                    <i class="fas fa-fist-raised"></i>
+                    <h5 class="h6">Мотивация</h5>
+                    <p>Заряд бодрости и мотивации для движения вперед к поставленным целям</p>
                 </div>
             </div>
         </div>
@@ -88,7 +110,7 @@
                 <li><span>Выявление ограничивающих убеждений</span></li>
                 <li><span>Практическая работа по изменению убеждений</span></li>
             </ul>
-            <i class="fas fa-check"></i>
+            <img src="{{ url_for('static', filename='img/reality/reality-themes.jpg') }}" alt="Темы тренинга">
         </div>
         <a class="registration-button" href=""><button class="btn btn-training btn-reality">Регистрация</button></a>
     </section>
@@ -146,11 +168,11 @@
     <section class="border-top form-payment" id="form-payment">
             <h2 class="h3">Регистрация на тренинг:</h2>
             <p>Стоимость тренинга - <span class="price">5.000 &#8381;</span></p>
-            <p>Дата проведения: лето 2020 года</p>
+            <p>Дата проведения: 17-20 августа 2020 года</p>
             <p class="payment-info">После оплаты на указанную почту будет выслано подтверждение</p>
             <form action="https://money.yandex.ru/eshop.xml" method="post"> <input required name="shopId" value="651404"
                     type="hidden" /> <input required name="scid" value="1291299" type="hidden" />
-                <input style="display: none;" required name="sum"
+                <input id="sumInput" style="display: none;" required name="sum"
                     value="5000" type="number" min="5000" placeholder="5000 руб.">
                 <p class="bold">Ф.И.О (<font color="red">*</font>):</p>
                 <input class="form-control" required
@@ -161,6 +183,8 @@
                 <p class="bold">Почта (<font color="red">*</font>):</p>
                 <input class="form-control" required name="custEmail"
                     value="" size="64" placeholder="ivanov@example.ru" />
+                <p class="bold">Промокод</p>
+                <input class="form-control" id="sale" type="text" placeholder="Введите промокод для получения скидки"/>
                 <textarea name="orderDetails" value="" rows="5" cols="64" wrap="soft" style="display: none;">ИЗМЕНЕНИЕ РЕАЛЬНОСТИ</textarea>
                 <input type="submit" value="Оплатить">
             </form>

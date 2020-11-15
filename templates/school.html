@@ -1,0 +1,693 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:title" content="Онлайн-школа «Секрет Успеха»">
+    <meta property="og:site_name" content="Бизнес-школа «Навигатор»">
+    <meta property="og:url" content="https://nabizz.ru/school">
+    <meta property="og:description"
+          content="Это практический курс для работы с собственным мышлением, а также освоение профессиональных управленческих навыков.">
+    <meta name="description"
+          content="Это практический курс для работы с собственным мышлением, а также освоение профессиональных управленческих навыков.">
+    <link rel="shortcut icon"
+          href="{{ url_for('static', filename='img/favicons/favicon.ico') }}"
+          type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/all.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/school.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/smedia.css') }}">
+    <title>Онлайн-школа «Секрет Успеха»</title>
+</head>
+<body>
+<header>
+    <article class="navigation">
+        <nav>
+            <div class="school-logo">
+                <img src="{{ url_for('static', filename='img/main/nabizzLogoRes.png') }}"
+                     alt="Бизнес-школа «Навигатор»">
+            </div>
+            <div class="nav-school-ul">
+                <ul>
+                    <li class="school-link"><a href="#about">О нас</a></li>
+                    <li class="school-link"><a href="#goal">Цель</a></li>
+                    <li class="school-link"><a href="#plan">Программа</a></li>
+                    <li class="school-link"><a href="#why">Почему мы</a></li>
+                    <li class="school-link"><a href="#registration">Регистрация</a></li>
+                </ul>
+                <div class="menu-icon">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+        <div class="hidden-menu">
+            <ul>
+                <li class="school-link"><a href="#about">О нас</a></li>
+                <li class="school-link"><a href="#goal">Цель</a></li>
+                <li class="school-link"><a href="#plan">Программа</a></li>
+                <li class="school-link"><a href="#why">Почему мы</a></li>
+                <li class="school-link"><a href="#registration">Регистрация</a></li>
+            </ul>
+        </div>
+    </article>
+    <article class="school-banner-container">
+        <section class="school-banner">
+            <section class="banner-info">
+                <h1>Онлайн-школа <br> <span class="banner-bold">«Секрет Успеха»</span></h1>
+                <h3>Авторский курс Бизнес-школы «Навигатор»</h3>
+                <a class="banner-btn" href="#registration">Забронировать</a>
+            </section>
+            <section class="banner-img">
+                <img src="{{ url_for('static', filename='img/school/banner-img.jpg') }}"
+                     alt="Марвах Ирина и Ряховская Татьяна">
+            </section>
+        </section>
+    </article>
+</header>
+<hr>
+<main>
+    <article class="about-school-container" id="about">
+        <section class="about-school">
+            <section class="about-school-info">
+                <h2>О чём школа</h2>
+                <h3>Благодаря школе Вы:</h3>
+                <ul class="list">
+                    <li>Научитесь управлять мечтами, эмоциями, деньгами и проектами, как в бизнесе, так и в работе по
+                        найму
+                    </li>
+                    <li>Научитесь получать финансовый результат от любимого дела и, при этом, не бегать как белка в
+                        колесе
+                    </li>
+                    <li>Станете уверенным в себе</li>
+                    <li>Осознаете уникальность своего призвания в работе</li>
+                    <li>Составите бизнес–план жизненного пути</li>
+                    <li>Создадите проект, в котором сможете найти себя</li>
+                    <li>Научитесь ставить цели и задачи-как жизненные, так и финансовые</li>
+                    <li>Найдете силы для реализации своей мечты</li>
+                    <li>Избавитесь от страхов</li>
+                    <li>Войдете в гармонию с собственным телом</li>
+                    <li>Станете источником позитивной энергии для себя и близких</li>
+                </ul>
+            </section>
+            <section class="about-school-img">
+                <img src="{{ url_for('static', filename='img/school/about-img.jpg') }}"
+                     alt="О чём школа «Секрет Успеха»?">
+            </section>
+        </section>
+        <section>
+            <div class="skills">
+                <p>Школа сочетает в себе навыки «hard» и «soft» внутренних изменений и профессиональных компетенций для
+                    развития счастливого, успешного и долгосрочного бизнеса</p>
+            </div>
+        </section>
+    </article>
+    <figure>
+        <section class="fixed-wrap">
+            <div class="fixed" id="fixed-1">
+
+            </div>
+        </section>
+    </figure>
+    <article class="tasks-container" id="goal">
+        <section class="tasks">
+            <section class="tasks-info">
+                <h2>Наша цель</h2>
+                <h3>Помочь людям начать бизнес через:</h3>
+            </section>
+            <section class="tasks-cards">
+                <div class="task-card"><img src="{{ url_for('static', filename='img/school/task-icon-1.png') }}"
+                                            alt="Получение свободы">
+                    <p>Получение свободы.
+                        Быть таким, каким человек рожден и принимать правильную идентификацию себя.
+                        Быть свободным от окружающего мира и его давления, от неправильных эмоций и от собственных
+                        шаблонов. </p>
+                </div>
+                <div class="task-card"><img src="{{ url_for('static', filename='img/school/task-icon-2.png') }}"
+                                            alt="Получение защиты">
+                    <p>Получение защиты путем избавления от страхов и получения знаний о законодательстве, оценке рисков
+                        и методов поиска решений</p>
+                </div>
+                <div class="task-card"><img src="{{ url_for('static', filename='img/school/task-icon-3.png') }}"
+                                            alt="Разработка бизнес-плана">
+                    <p>Разработку бизнес-плана по открытию бизнеса. Мы поможем увидеть путь получения первоначального
+                        капитала и старта проекта</p>
+                </div>
+            </section>
+        </section>
+    </article>
+    <hr>
+    <article class="points-container">
+        <section class="points">
+            <section class="points-info">
+                <h2>Задачи</h2>
+                <h3>Какие задачи мы поставили на разбор:</h3>
+                <ul class="list">
+                    <li>Повысить самооценку</li>
+                    <li>Определить ключевые компетенции лидерства</li>
+                    <li>Оценить сильные и слабые стороны для эффективной работы в команде</li>
+                    <li>Научиться ставить и достигать цели, планировать и управлять временем</li>
+                    <li>Жить сбалансированной, гармоничной жизнью</li>
+                    <li>Приносить пользу обществу через реализацию личной миссии</li>
+                    <li>Уметь определять страхи и научиться методике их преодоления</li>
+                    <li>Избавиться от разрушающих эмоций</li>
+                    <li>Научиться составлять бизнес-план для оценки рисков и финансовых перспектив своего проекта</li>
+                </ul>
+            </section>
+            <section class="points-img">
+                <img src="{{ url_for('static', filename='img/school/points-img.jpg') }}"
+                     alt="Задачи школы «Секрет Успеха»">
+            </section>
+        </section>
+    </article>
+    <figure>
+        <section class="fixed-wrap">
+            <div class="fixed" id="fixed-2">
+
+            </div>
+        </section>
+    </figure>
+    <article class="for-who-container">
+        <section class="for-who">
+            <section class="for-who-info">
+                <h2>Для кого</h2>
+                <h3>Кому необходимо и будет полезно обучение:</h3>
+            </section>
+            <section class="for-who-cards">
+                <div class="for-who-card"><img src="{{ url_for('static', filename='img/school/for-who-icon-1.png') }}"
+                                               alt="Кто хочет научиться ставить цели, которые работают">
+                    <p>Кто хочет научиться ставить цели, которые работают</p>
+                </div>
+                <div class="for-who-card"><img src="{{ url_for('static', filename='img/school/for-who-icon-2.png') }}"
+                                               alt="Кто хочет начать свое дело">
+                    <p>Кто хочет начать свое дело</p>
+                </div>
+                <div class="for-who-card"><img src="{{ url_for('static', filename='img/school/for-who-icon-3.png') }}"
+                                               alt="Кто перегорел и ищет источник энергии">
+                    <p>Кто перегорел и ищет источник энергии</p>
+                </div>
+                <div class="for-who-card"><img src="{{ url_for('static', filename='img/school/for-who-icon-4.png') }}"
+                                               alt="Кто хочет больше зарабатывать">
+                    <p>Кто хочет больше зарабатывать</p>
+                </div>
+                <div class="for-who-card for-who-card-img"><img
+                        src="{{ url_for('static', filename='img/school/for-who-img.jpg') }}"
+                        alt="Кому необходимо и будет полезно обучение"></div>
+                <div class="for-who-card"><img src="{{ url_for('static', filename='img/school/for-who-icon-5.png') }}"
+                                               alt="Кто устал от пылящихся идей">
+                    <p>Кто устал от пылящихся идей</p>
+                </div>
+            </section>
+        </section>
+    </article>
+    <hr>
+    <article class="plan-of-education-container" id="plan">
+        <section class="plan-of-education">
+            <section class="plan-of-education-info">
+                <h2>Как проходит обучение</h2>
+                <h3>План обучения, который не будет мешать Вашему распорядку дня:</h3>
+                <ul class="list">
+                    <li>24/7</li>
+                    <li>В любое удобное время, в комфортном темпе</li>
+                    <li>Старт программы сразу после регистрации</li>
+                    <li>Сопровождение куратора</li>
+                    <li>Рабочие материалы</li>
+                    <li>Чек – листы</li>
+                    <li>Онлайн –уроки с практическими кейсами и упражнениями</li>
+                </ul>
+            </section>
+            <section class="plan-of-education-img">
+                <img src="{{ url_for('static', filename='img/school/plan-img.jpg') }}" alt="Как проходит обучение">
+            </section>
+        </section>
+    </article>
+    <figure>
+        <section class="fixed-wrap">
+            <div class="fixed" id="fixed-3">
+
+            </div>
+        </section>
+    </figure>
+    <article class="program-container">
+        <section class="program">
+            <section class="program-info">
+                <h2>Программа школы</h2>
+                <h3>Школа состоит из 5 Модулей, каждый Модуль открывается после прохождения предыдущего и шаг за шагом
+                    раскрывает потенциал человека в предпринимательстве, творчестве и полезности миру.</h3>
+            </section>
+            <section class="modules">
+                <div class="module module-1">
+                    <div class="module-title">
+                        <h3>Модуль 1. «Осознанность»</h3>
+                    </div>
+                    <div class="module-info">
+                        <div class="module-inside">
+                            <h4>1. Введение</h4>
+                            <p>Практический курс для работы с собственным мышлением и освоение профессиональных
+                                управленческих и проектных навыков. Поэтому очень важно сформулировать правильные
+                                ожидания от школы.</p>
+                            <ul class="list">
+                                <li>Для чего нужна эта школа и как правильно ее проходить</li>
+                                <li>Важность духовной сферы для достижения результата в бизнесе</li>
+                                <li>Пошаговое описание инструмента для изменения мышления</li>
+                            </ul>
+                        </div>
+                        <div class="module-inside">
+                            <h4>2. Самооценка</h4>
+                            <p>Для постановки и достижения целей, важно иметь здоровую самооценку.
+                                Атмосфера, в которой мы живем, и опыт собственных достижений или неудач влияют на то,
+                                что мы о себе думаем. Поэтому целью урока являются следующие темы:</p>
+                            <ul class="list">
+                                <li>Разберем, почему так важно иметь здоровую самооценку</li>
+                                <li>Выявим симптомы заниженной самооценки</li>
+                                <li>Проработаем зоны заниженной самооценк</li>
+                            </ul>
+                        </div>
+                        <div class="module-inside">
+                            <h4>3. Оценка окружающих</h4>
+                            <p>Для каждого важно, что о нем говорят и как относятся окружающие люди. Мнение о самих себе
+                                частично формируется из того, что о нас говорят окружающие люди и как они отзываются о
+                                нашем труде.</p>
+                            <ul class="list">
+                                <li>Выявим основные причины, влияющих на наше восприятие себя</li>
+                                <li>Избавимся от стереотипов и оценочных суждений</li>
+                                <li>Сформируем новый взгляд на собственные возможности</li>
+                            </ul>
+                        </div>
+                        <div class="module-inside">
+                            <h4>4. Лидерство</h4>
+                            <p>Многие годы утверждение о том, что все должны быть лидерами, устойчиво двигали наше
+                                сознание.
+                                Однако, на практике не все могут и должны быть лидерами и носить «пиджак по плечу» не
+                                означает проявление слабости, а скорее идентификацию того, кем ты являешься.</p>
+                            <ul class="list">
+                                <li>Разберем что такое лидерство, управление и власть</li>
+                                <li>Рассмотрим разницу между лидерством и уверенность в себе</li>
+                                <li>Убедимся, что можно остаться самим собой и достигать успеха</li>
+                            </ul>
+                        </div>
+                        <div class="module-inside">
+                            <h4>5. Компетенции</h4>
+                            <p>Под влиянием всеобщего лидерства и иллюзии самодостаточности, нам кажется что все
+                                остальное для управления не имеет значения. Но это не так, важно соблюсти баланс между
+                                всеми аспектами управления, которые требуют разных компетенций.</p>
+                            <ul class="list">
+                                <li>Разберем 6 главных функций менеджмента</li>
+                                <li>Рассмотрим разницу между результативностью и эффективность</li>
+                                <li>Найдем свою уникальную компетенцию, чтобы быть хорошим управленцем и правильно
+                                    формировать коман
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="module-inside">
+                            <h4>6. Анализ сильных сторон / SWOT анализ личности</h4>
+                            <p>Помимо ключевых управленческих компетенций, есть много навыков, которыми мы обладаем, но
+                                недооцениваем их как сильные стороны. Проанализировав себя, свой жизненный опыт и
+                                приобретенные знания важно составить само презентацию</p>
+                            <ul class="list">
+                                <li>Выявим сильные и слабые стороны</li>
+                                <li>Опишем ключевые профессиональные навыки</li>
+                                <li>Составим презентацию себя или резюме</li>
+                            </ul>
+                        </div>
+                        <div class="module-inside">
+                            <h4>7. Навык постановки целей</h4>
+                            <p>В любом деле важно иметь навык построения правильных целей. От того на сколько продумана
+                                цель, зависит успешность ее достижения, а значит и уверенность в собственных силах.</p>
+                            <ul class="list">
+                                <li>Научимся правильно ставить цели</li>
+                                <li>Отработаем механизм размышлений</li>
+                                <li>Определим алгоритм выделения задач для успешного достижения целей</li>
+                            </ul>
+                        </div>
+                        <div class="module-inside">
+                            <h4>8. Колесо баланса, картинка идеального мира</h4>
+                            <p>Чтобы чувствовать себя живым и счастливым важно ощущение гармонии во всех жизненных
+                                сферах. Чтобы достигая успеха в одной сфере, не остаться у «разбитого корыта» в
+                                другой.</p>
+                            <ul class="list">
+                                <li>Выделим сферы, в которых важно именно для тебя достижение успеха</li>
+                                <li>Определим точки оценки успешности в этих сферах</li>
+                                <li>Обозначим время и действия для реализации каждого направления</li>
+                            </ul>
+                        </div>
+                        <div class="module-inside">
+                            <h4>9. Миссия, мечта, призвание</h4>
+                            <p>Каждый человек в какой-то степени нуждается в обществе, как минимум, чтобы его признавали
+                                и ценили. Лучший способ для этого – дело. Когда результат нашего труда приносит
+                                удовольствие нам самим и полезен для окружающих, финансовый результат будет особенно
+                                приятен.</p>
+                            <ul class="list">
+                                <li>Выявим долгосрочную мечту</li>
+                                <li>Оформим мечту в конкретную идею</li>
+                                <li>Определим нишу для бизнеса или сферу реализации дела</li>
+                            </ul>
+                        </div>
+                        <div class="module-inside">
+                            <h4>10. От Мечты к Бизнес-проекту</h4>
+                            <p>Любая мечта, хобби, удовольствие может стать прибыльным бизнесом или дополнительным
+                                источником финансов. Важно только правильно выделить ключевые моменты организации этого
+                                дела.</p>
+                            <ul class="list">
+                                <li>Освоим основы правильной презентации проекта</li>
+                                <li>Определим целевую аудиторию и конкурентные преимущества</li>
+                                <li>Разберем инструменты для презентации проектов</li>
+                            </ul>
+                        </div>
+                        <div class="module-inside">
+                            <h4>11. Причины не достижения целей</h4>
+                            <p>К сожалению, не всегда даже самый удачный проект становиться прибыльным делом. У этого
+                                есть ряд объяснений и очень часто главные виновники: лень и страх.</p>
+                            <ul class="list">
+                                <li>Выявим причины, препятствующие достижению целей</li>
+                                <li>Разберем способы преодоления препятствий</li>
+                                <li>Взглянем в лицо страхам, мешающим начать</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <hr class="gray-hr">
+                <div class="module module-2">
+                    <div class="module-title">
+                        <h3>Модуль 2. «Путевые столбы»</h3>
+                    </div>
+                    <div class="module-info">
+                        <div class="module-inside">
+                            <h4>12. Освобождение внутренней энергии</h4>
+                            <p>Для того, чтобы были силы для реализации новых проектов и идей требуется энергия на всех
+                                уровнях: Духа, Души и Тела. Каждый уровень имеет свои особенности для восстановления
+                                энергии и ее преумножения.</p>
+                        </div>
+                        <div class="module-inside">
+                            <h4>13. Движение к Призванию</h4>
+                            <p>Бывает, хочется бросить начатое дело и разрушить до основания, а потом строить новый
+                                удивительный мир? Такой подход бывает губителен для нас самих и тех, за кого мы несем
+                                ответственность. Поэтому, сбалансированный переход к Призванию требует отдельного
+                                планирования и взвешенного подхода. </p>
+                        </div>
+                        <div class="module-inside">
+                            <h4>14. Mind map</h4>
+                            <p>Стратегическое развитие себя и проекта своей жизни подобно собиранию увлекательного
+                                пазла. Важно соединить воедино все кусочки своих ценностей, опыта, талантов, навыков и
+                                реальности, в которой ты живешь, чтобы не потерять ни одну часть себя и увидеть полную
+                                картину.</p>
+                        </div>
+                        <div class="module-inside">
+                            <h4>15. Time management</h4>
+                            <p>Направлений развития множество и только достигнув все, можно прийти к конечной точке
+                                трудового призвания. Пришло время расписать конкретные цели в каждом пазле своего
+                                движения, чтобы бить точно в цель и продвигаться к самой важной цели жизни.</p>
+                        </div>
+                        <div class="module-inside">
+                            <h4>16. Ближайшая цель</h4>
+                            <p>Управление временем имеет цель не только приобрести навык выполнения наибольшего
+                                количества задач, но и увеличение совокупного дохода при достижения поставленных целей.
+                                За временем невозможно угнаться, но можно научиться управлять собой, чтобы быть
+                                эффективным в каждый момент. </p>
+                        </div>
+                        <div class="module-inside">
+                            <h4>17. Мотивация </h4>
+                            <p>Каждый из нас нуждается во вдохновении и мотивации на пути достижения. Легко быть
+                                мотивированным, когда ты находишься в присутствии вдохновляющих людей. Рассмотрим, как
+                                мотивироваться не от харизматичных спикеров, а самому стать источником мотивации для
+                                многих.</p>
+                        </div>
+                        <div class="module-inside">
+                            <h4>18. Личный бюджет</h4>
+                            <p>Самая большая путаница приходит, когда деньги не подлежат строгому подсчету. Формирование
+                                бюджета личного, бюджета для реализации проекта или бизнеса, учет и планирование –
+                                ключевой навык развития проекта.</p>
+                        </div>
+                        <div class="module-inside">
+                            <h4>19. Основы написания Бизнес-плана</h4>
+                            <p>Умение правильно написать бизнес-план своего проекта поможет самому оценить свои силы и
+                                необходимые ресурсы для реализации, а также поспособствует привлечению потенциальных
+                                инвесторов в свой проект.</p>
+                        </div>
+                        <div class="module-inside">
+                            <h4>20. Временная линейка бизнес-плана</h4>
+                            <p>Размышляя над своим бизнес-планом, необходимо определить сроки реализации проекта, для
+                                того чтобы необходимое инвестирование средств, времени и трудовых ресурсов не стало
+                                неожиданностью в самый неподходящий момент.</p>
+                        </div>
+                    </div>
+                </div>
+                <hr class="gray-hr">
+                <div class="module module-3">
+                    <div class="module-title">
+                        <h3>Модуль 3. «Изменение ограничивающих убеждений»</h3>
+                    </div>
+                    <div class="module-info">
+                        <div class="module-inside">
+                            <p>Этот модуль будет посвящен разбору собственных ограничивающих убеждений, которые не
+                                позволяют вырваться за границы шаблонного мышления. Разберем понятия успешности,
+                                представлений об окружающем мире, о мире денег и бизнеса. Поработаем с реакциями тела,
+                                разрушающими эмоциями и страхами.</p>
+                        </div>
+                    </div>
+                </div>
+                <hr class="gray-hr">
+                <div class="module module-4">
+                    <div class="module-title">
+                        <h3>Модуль 4. «Боевая готовность»</h3>
+                    </div>
+                    <div class="module-info">
+                        <div class="module-inside">
+                            <p>В этом модуле мы подготовим документы для юридической безопасности своего проекта.
+                                Соберем своевременную и подходящую команду. Оценим риски и найдем инвестора, если это
+                                будет необходимо</p>
+                        </div>
+                    </div>
+                </div>
+                <hr class="gray-hr">
+                <div class="module module-5">
+                    <div class="module-title">
+                        <h3>Модуль 5 «На старт!»</h3>
+                    </div>
+                    <div class="module-info">
+                        <div class="module-inside">
+                            <p>Когда процесс уже запущен, самое время обдумать детали и стратегию развития бизнеса.
+                                Разберем вопросы маркетинга, переговоров, управления и дальнейшего развития своей
+                                компании.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </article>
+    <hr>
+    <article class="why-we-container" id="why">
+        <section class="why-we">
+            <section class="why-we-info">
+                <h2>Почему мы</h2>
+                <ul class="list-us">
+                    <li>Авторская методика работы с убеждениями, мешающими росту</li>
+                    <li>Практикующие управленцы командами от 10 до 100 человек</li>
+                    <li>Реальный предпринимательский опыт в разных сферах</li>
+                    <li>Эффективные менторы – мы не просто решаем проблему, мы остаемся до конца и проводим человека до
+                        осознанности его призвания и пикселя денег
+                    </li>
+                </ul>
+            </section>
+            <hr class="gray-hr">
+            <section class="about-speakers">
+                <section class="speaker-container speaker-first">
+                    <div class="speaker-info">
+                        <h3>Ирина Марвах</h3>
+                        <p>С 2000 года специализируется на внедрении регулярного менеджмента и целеполагания, оценке
+                            эффективности труда, формировании организационных структур и автоматизации бизнес -
+                            процессов в коммерческой и некоммерческой сферах.</p>
+                        <div class="speaker-contacts">
+                            <span class="span-contact">
+                                <i class="far fa-envelope"></i><span>irina.marvakh@gmail.com</span>
+                            </span>
+                            <span class="span-contact">
+                                <i class="fab fa-instagram"></i><span><a href="https://www.instagram.com/irina_marvakh/"
+                                                                         target="_blank">@irina_marvakh</a></span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="speaker-photo">
+                        <img src="{{ url_for('static', filename='img/school/speaker-first.jpg') }}" alt="Ирина Марвах">
+                    </div>
+                </section>
+                <hr class="gray-hr">
+                <section class="speaker-container speaker-second">
+                    <div class="speaker-info">
+                        <h3>Татьяна Ряховская</h3>
+                        <p>Обладает более чем 15-летним опытом управления как в коммерческом, так и в некоммерческом
+                            секторах. Специализируется на формировании стратегии развития бизнеса и проектов, развитии
+                            личного творческого потенциала в бизнес среде, консалтинге, в выборе ниши бизнеса и оценке
+                            рисков.</p>
+                        <div class="speaker-contacts">
+                            <span class="span-contact">
+                                <i class="far fa-envelope"></i><span>tanyarv@cogmos.ru</span>
+                            </span>
+                            <span class="span-contact">
+                                <i class="fab fa-instagram"></i><span><a
+                                    href="https://www.instagram.com/ryakhovskaya.t/"
+                                    target="_blank">@ryakhovskaya.t</a></span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="speaker-photo">
+                        <img src="{{ url_for('static', filename='img/school/speaker-second.jpg') }}" alt="Ирина Марвах">
+                    </div>
+                </section>
+            </section>
+        </section>
+    </article>
+    <figure>
+        <section class="fixed-wrap">
+            <div class="fixed" id="fixed-4">
+
+            </div>
+        </section>
+    </figure>
+    <article class="price-block-container" id="registration">
+        <section class="price-block-table">
+            <h2>Выбор пакета участия</h2>
+            <h3>Модуль 1. «Осознанность»</h3>
+            <table class="table-of-modules">
+                <tr class="count-of-modules">
+                    <th class="title-in-table title-3">Лайт</th>
+                    <th class="title-in-table title-2">Стандарт</th>
+                    <th class="title-in-table title-1">Стандарт +</th>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="hidden-title title-3">Лайт</p>
+                        <ul class="list">
+                            <li><span>Доступ к видео-урокам на 4 месяца</span></li>
+                            <li><span>Доступ к закрытому чату в Телеграмм</span></li>
+                            <li><span>Чек-лист с рекомендациями</span></li>
+                        </ul>
+                        <div class="price-block">
+                            <p class="text-muted third-block">Цена 8.000 &#8381;</p>
+                            <a href="">
+                                <button class="btn btn-dark choosing-btn" id="8000" name="Пакет: «Лайт»">Выбрать
+                                </button>
+                            </a>
+                        </div>
+                    </td>
+                    <td>
+                        <p class="hidden-title title-2">Стандарт</p>
+                        <ul class="list">
+                            <li><span>Доступ к видео-урокам на 5 месяцев</span></li>
+                            <li><span>Доступ к закрытому чату в Телеграмм</span></li>
+                            <li><span>Проверка домашнего задания куратором</span></li>
+                            <li><span>Шаблоны, чек-листы</span></li>
+                            <li><span>1 персональная консультация по теме урока</span></li>
+                        </ul>
+                        <div class="price-block">
+                            <p class="text-muted second-block">Цена 12.500 &#8381;</p>
+                            <a href="">
+                                <button class="btn btn-dark choosing-btn" id="12500" name="Пакет: «Стандарт»">
+                                    Выбрать
+                                </button>
+                            </a>
+                        </div>
+                    </td>
+                    <td>
+                        <p class="hidden-title title-1">Стандарт +</p>
+                        <ul class="list">
+                            <li><span>Доступ к видео-урокам на 6 месяцев</span></li>
+                            <li><span>Доступ к закрытому чату в Телеграмм</span></li>
+                            <li><span>Проверка домашнего задания преподавателем</span></li>
+                            <li><span>Шаблоны, чек-листы</span></li>
+                            <li><span>2 персональные консультации по теме урока</span></li>
+                            <li><span>Ежемесячные вебинары с разбором ошибок от преподавателей</span></li>
+                            <li><span>1 персональная консультация по проработке стратегии продвижения (создания) бизнес-проекта</span>
+                            </li>
+                        </ul>
+                        <div class="price-block">
+                            <p class="text-muted first-block">Цена 23.000 &#8381;</p>
+                            <a href="">
+                                <button class="btn btn-dark choosing-btn" id="23000"
+                                        name="Пакет: «Стандарт+»">Выбрать
+                                </button>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </article>
+    <hr>
+    <article class="form-payment-container">
+        <section class="form-payment">
+            <h2>Оплата</h2>
+            <p class="text-muted">Начало 1го модуля: 15 декабря 2020 года</p>
+            <p class="text-muted">После оплаты на указанную почту будет выслано подтверждение</p>
+            <form action="https://money.yandex.ru/eshop.xml" method="post" id="form-consulting"><input required
+                                                                                                       name="shopId"
+                                                                                                       value="651404"
+                                                                                                       type="hidden"/>
+                <input required name="scid" value="1291299" type="hidden"/>
+                <select id="select-package-consulting" class="select-package form-control">
+                    <option value="8000">Пакет: «Лайт»</option>
+                    <option value="12500">Пакет: «Стандарт»</option>
+                    <option value="23000">Пакет: «Стандарт+»</option>
+                </select>
+                <p class="text-muted" id="chosen-package">Выбранный пакет: <span>«Лайт»</span></p>
+                <p>Стоимость - <span class="price-school">8.000 &#8381;</span></p>
+                <input style="display: none" name="sum"
+                       value="8000" type="number" id="value-of-input-consulting">
+                <p class="bold">Ф.И.О (<font color="red">*</font>):</p>
+                <input class="form-control" required
+                       name="customerNumber" value="" size="64" placeholder="Иван Иванов Иванович"/>
+                <p class="bold">Номер телефона (<font color="red">*</font>):</p>
+                <input class="form-control" required name="custName" value=""
+                       size="64" placeholder="+7(999)-999-9999"/>
+                <p class="bold">Почта (<font color="red">*</font>):</p>
+                <input class="form-control" required name="custEmail"
+                       value="" size="64" placeholder="ivanov@example.ru"/>
+                <p class="bold">Промокод</p>
+                <input class="form-control" id="sale-school" type="text"
+                       placeholder="Введите промокод для получения скидки"/>
+                <p class="promo-info">Промокод применён!</p>
+                <textarea name="orderDetails" value="" rows="5" cols="64" wrap="soft" style="display: none;">Пакет: «Лайт»</textarea>
+                <input type="submit" value="Оплатить">
+            </form>
+        </section>
+    </article>
+</main>
+<footer class="pt-4 my-md-5 pt-md-5 border-top">
+    <div class="row footer-text">
+        <div class="col-6 col-md">
+            <h5>Услуги</h5>
+            <ul class="list-unstyled text-small">
+                <li><a class="text-muted" href="{{ url_for('trainings') }}">Тренинги</a></li>
+                <li><a class="text-muted" href="{{ url_for('vebinars') }}">Вебинары</a></li>
+                <li><a class="text-muted" href="{{ url_for('courses') }}">Курсы</a></li>
+                <li><a class="text-muted" href="{{ url_for('consulting') }}">Консалтинг</a></li>
+                <li><a class="text-muted" href="{{ url_for('school') }}">Онлайн-школа</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-md">
+            <h5>Контакты</h5>
+            <ul class="list-unstyled text-small">
+                <li class="text-muted">info@nabizz.ru</li>
+                <li class="text-muted">+7(903)-109-0542</li>
+            </ul>
+        </div>
+        <div class="col-12 col-md footer-logo">
+            <a href="{{ url_for('main_page') }}"><img class="mb-2"
+                                                      src="{{ url_for('static', filename='img/main/nabizzLogoRes.png') }}"
+                                                      alt="Бизнес-школа «Навигатор»" width="150"
+                                                      height="auto"></a>
+            <small class="d-block mb-3 text-muted">© Бизнес-школа «Навигатор»</small>
+        </div>
+    </div>
+    <div class="footer-info">
+        <p class="text-muted mb-3">Продолжая работу с сайтом www.nabizz.ru и данной страницей, вы соглашаетесь с
+            использованием сайтом cookies вашего браузера с целью улучшить отображение данной страницы на основе ваших
+            предпочтений и интересов, а также с <a href="{{ url_for('personal_data') }}" style="color: #08ccf3">политикой
+                обработки персональных данных</a>. Информация на сайте www.nabizz.ru не является публичной офертой.</p>
+    </div>
+</footer>
+<script src="{{ url_for('static', filename='js/dist/main.js') }}"></script>
+</body>
+</html>

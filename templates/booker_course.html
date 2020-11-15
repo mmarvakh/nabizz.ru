@@ -1,5 +1,13 @@
 {% extends 'base.html' %}
 
+{% block meta %}
+    <meta property="og:title" content="Обучающий курс «От Устава до Баланса»">
+    <meta property="og:site_name" content="Бизнес-школа «Навигатор»">
+    <meta property="og:url" content="https://nabizz.ru/booker-course">
+    <meta property="og:description" content="Это единственная программа, соединяющая бухгалтеров, администраторов и пасторов церквей в командной работе – распространять вероучение, соблюдая установленные государством правовые предписания.">
+    <meta name="description" content="Это единственная программа, соединяющая бухгалтеров, администраторов и пасторов церквей в командной работе – распространять вероучение, соблюдая установленные государством правовые предписания.">
+{% endblock %}
+
 {% block main %}
     <section class="about-course">
             <div class="title text-left">
@@ -182,13 +190,13 @@
             <p style="font-size: 16px; color: #444">Скидка действует до 30.06.2020 </p>
             <table class="table-of-modules">
                 <tr class="count-of-modules">
-                    <th class="title-in-table title-3">Бухгалтер</th>
-                    <th class="title-in-table title-2">Администратор</th>
-                    <th class="title-in-table title-1">Пастор</th>
+                    <th class="title-in-table title-3">Бухгалтер <br> <span style="font-size: 16px">3 месяца, 28 тем</span></th>
+                    <th class="title-in-table title-2">Администратор <br> <span style="font-size: 16px">2 месяца, 20 тем</span></th>
+                    <th class="title-in-table title-1">Пастор <br> <span style="font-size: 16px">1 месяц, 5 тем</span></th>
                 </tr>
                 <tr>
                     <td>
-                        <p class="hidden-title title-3">Бухгалтер</p>
+                        <p class="hidden-title title-3">Бухгалтер <br> <span style="font-size: 16px">3 месяца, 28 тем</span></p>
                         <ul class="course-ul first-ul">
                             <li><span><span class="bold">Доступ к модулю 1</span> <br> Создание и функционирование религиозной организации</span></li>
                             <li><span><span class="bold">Доступ к модулю 2</span> <br> Бухгалтерский учет</span></li>
@@ -205,7 +213,7 @@
                         </div>
                     </td>
                     <td>
-                        <p class="hidden-title title-2">Администратор</p>
+                        <p class="hidden-title title-2">Администратор <br> <span style="font-size: 16px">2 месяца, 20 тем</span></p>
                         <ul class="course-ul second-ul">
                             <li><span><span class="bold">Доступ к модулю 1</span> <br> Создание и функционирование религиозной организации</span></li>
                             <li><span><span class="bold">Доступ к модулю 3</span> <br> Документальное оформление уставной деятельности</span></li>
@@ -221,7 +229,7 @@
                         </div>
                     </td>
                     <td>
-                        <p class="hidden-title title-1">Пастор</p>
+                        <p class="hidden-title title-1">Пастор <br> <span style="font-size: 16px">1 месяц, 5 тем</span></p>
                         <ul class="course-ul third-ul">
                             <p style="font-weight: 500">Доступ к темам:</p>
                             <li><span>Выбор формы деятельности – религиозная группа или организация</span></li>

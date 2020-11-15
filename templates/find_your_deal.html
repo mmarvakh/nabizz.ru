@@ -1,0 +1,133 @@
+{% extends 'base.html' %}
+
+{% block meta %}
+    <meta property="og:title" content="Вебинар «Найди своё дело»">
+    <meta property="og:site_name" content="Бизнес-школа «Навигатор»">
+    <meta property="og:url" content="https://nabizz.ru/vebinar/find-your-deal">
+    <meta property="og:description" content="Человек работает минимум 8 часов в день, с юности до почтенного возраста. И это много, не поспоришь. А теперь представьте вариант работать, при этом радоваться, не ждать пятницы и не ворчать себе под нос гадости после встречи с начальником, представляя как офис сгорит в огне. И не сожалеть об упущенных идеях, которые пылятся в шкафу. Отлично, тогда регистрируйся на вебинар. Потому что осталось прояснить один маленький вопрос – Как заниматься любимым делом, зарабатывать и двигаться к цели.">
+    <meta name="description" content="Человек работает минимум 8 часов в день, с юности до почтенного возраста. И это много, не поспоришь. А теперь представьте вариант работать, при этом радоваться, не ждать пятницы и не ворчать себе под нос гадости после встречи с начальником, представляя как офис сгорит в огне. И не сожалеть об упущенных идеях, которые пылятся в шкафу. Отлично, тогда регистрируйся на вебинар. Потому что осталось прояснить один маленький вопрос – Как заниматься любимым делом, зарабатывать и двигаться к цели.">
+{% endblock %}
+
+{% block main %}
+    <section id="vebinar-find-your-deal">
+        <section class="main-banner">
+            <img src="{{ url_for('static', filename='img/vebinars/find-your-deal/deal-banner.jpg') }}" alt="Вебинар «Найди своё дело»">
+        </section>
+        <section class="about-training border-top text-center">
+            <h2 class="h3 text-left">О чём вебинар:</h2>
+            <div class="text-left" style="font-weight: 500; margin-bottom: 3%">
+                <p>Человек работает минимум 8 часов в день, с юности до почтенного возраста. И это много, не поспоришь.</p>
+                <p>А теперь представьте вариант работать, при этом радоваться, не ждать пятницы и не ворчать себе под нос гадости после встречи с начальником, представляя как офис сгорит в огне. И не сожалеть об упущенных идеях, которые  пылятся в шкафу.</p>
+                <p>Отлично, тогда регистрируйся на вебинар. Потому что осталось прояснить один маленький вопрос – Как заниматься любимым делом, зарабатывать и двигаться к цели.</p>
+            </div>
+            <a class="registration-button" href=""><button class="btn btn-training btn-find-your-deal">Регистрация</button></a>
+        </section>
+        <section class="for-who-training border-top">
+            <h2 class="h3">Для кого предназначен:</h2>
+            <div class="for-who-training-container">
+                <div class="for-who-block">
+                <i class="fas fa-frown"></i>
+                <h4 class="h5">Уволили с работы</h4>
+                </div>
+                <div class="for-who-block">
+                    <i class="fas fa-door-open"></i>
+                    <h4 class="h5">Хочет уйти с работы по найму</h4>
+                </div>
+                <div class="for-who-block">
+                    <i class="fas fa-angry"></i>
+                    <h4 class="h5">Перегорел, нет сил и всё раздражает</h4>
+                </div>
+                <div class="for-who-block">
+                    <i class="fas fa-money-bill-alt"></i>
+                    <h4 class="h5">Понял, что денег не хватает и надо срочно что–то делать</h4>
+                </div>
+                <div class="for-who-block">
+                    <i class="fas fa-user-clock"></i>
+                    <h4 class="h5">Устал проводить весь день на нелюбимой работе</h4>
+                </div>
+                <div class="for-who-block">
+                    <i class="fas fa-user-tie"></i>
+                    <h4 class="h5">Хочет стать независимым от работодателя</h4>
+                </div>
+            </div>
+        </section>
+        <section class="program-of-training border-top text-center">
+            <h2 class="h3 text-left">Программа вебинара:</h2>
+            <div class="program-of-training-container" style="margin-bottom: 3%">
+                <div class="program-of-training-block">
+                    <div class="inside-program">
+                        <i class="fas fa-fist-raised"></i><h5 class="h6">3 силы для работы с «синдромом самозванца»</h5>
+                    </div>
+                </div>
+                <div class="program-of-training-block">
+                    <div class="inside-program">
+                        <i class="fas fa-flask"></i><h5 class="h6">Формула экспертности</h5></div>
+                </div>
+                <div class="program-of-training-block">
+                    <div class="inside-program">
+                        <i class="fas fa-map-marked-alt"></i><h5 class="h6">Дорожная карта к поиску сокровищ –любимого дела, приносящего деньги.</h5>
+                    </div>
+                </div>
+            </div>
+            <a class="registration-button" href=""><button class="btn btn-training btn-reality">Регистрация</button></a>
+        </section>
+        <section class="authors-of-project-container border-top">
+            <h2 class="h3">Спикер вебинара:</h2>
+            <section class="authors-of-project">
+                <div class="about-author-main">
+                    <div class="part-1">
+                        <h3 class="h4">Ирина Марвах</h3>
+                        <p style="font-size: 16px; color: #4e555b; font-weight: 500">Топ–менеджер, профессиональный управляющий</p>
+                        <ul class="course-ul">
+                            <li><span>Делает любимое дело более 17 лет, приводит дела в порядок в коммерческих и некоммерческих организациях</span></li>
+                            <li><span>Изменила карьеру химика на профессию управляющего, по пути вышла замуж, родила 3–х детей, изменила представление о декрете и получила степень MBA</span></li>
+                            <li><span>Спикер на конференциях и семинарах о поиске призвания, ценности человека и осознанной жизни</span></li>
+                            <li><span>Соавтор тренингов личностного и профессионального роста</span></li>
+                            <li><span>Партнер «Бизнес–школы Навигатор»</span></li>
+                        </ul>
+                        <div class="contacts">
+                            <div>
+                                <i class="fas fa-envelope" aria-hidden="true"></i><a href="mailto:irina.marvakh@gmail.com">irina.marvakh@gmail.com</a>
+                            </div>
+                            <div>
+                                <i class="fab fa-instagram" aria-hidden="true"></i><a href="https://www.instagram.com/irina_marvakh/" target="_blank">@irina_marvakh</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="part-2">
+                        <img src="{{ url_for('static', filename='img/main/irina-2.jpg') }}" alt="Ирина Марвах">
+                    </div>
+                </div>
+                <div class="about-author-main border-top" style="display: none">
+                    <div class="part-1">
+                        <h3 class="h4">Татьяна Ряховская</h3>
+                        <p style="font-size: 16px; color: #4e555b; font-weight: 500">Бизнес-тренер</p>
+                        <ul class="course-ul">
+                            <li><span>15 лет опыта практикующего финансового консультанта</span></li>
+                            <li><span>Автор тренингов личностного и профессионального роста</span></li>
+                            <li><span>Регулярно консультирует людей в вопросах выбора ниши бизнеса, оценке рисков и личного призвания</span></li>
+                            <li><span>Спикер на конференциях и семинарах</span></li>
+                            <li><span>Автор и ведущий корпоративных тренингов по командообразованию</span></li>
+                        </ul>
+                        <div class="contacts">
+                            <div>
+                                <a href="mailto:tanyarv@cogmos.ru">tanyarv@cogmos.ru</a><i class="fas fa-envelope" aria-hidden="true"></i>
+                            </div>
+                            <div>
+                                <a href="https://www.instagram.com/ryakhovskaya.t/" target="_blank">@ryakhovskaya.t</a><i class="fab fa-instagram" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="part-2">
+                        <img src="{{ url_for('static', filename='img/main/tatyna-1.jpg') }}" alt="Татьяна Ряховская">
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="border-top form-submit" id="form-payment">
+            <h2 class="h3">Регистрация на вебинар</h2>
+            <h3 class="h4">БЕСПЛАТНО 19.06.2020 в 20-00 </h3>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdbwgin8ZmLOFMjRPBijSLsxXnUDKbPA-Uc3DsXdwMmB44SrA/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Загрузка…</iframe>
+        </section>
+    </section>
+{% endblock %}

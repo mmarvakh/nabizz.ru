@@ -1,5 +1,13 @@
 {% extends 'base.html' %}
 
+{% block meta %}
+    <meta property="og:title" content="Тренинг «Осознанная индивидуальность»">
+    <meta property="og:site_name" content="Бизнес-школа «Навигатор»">
+    <meta property="og:url" content="https://nabizz.ru/individuality">
+    <meta property="og:description" content="«Осознанная индивидуальность» – 3-дневный онлайн-тренинг, определяющий ключевые компетенции человека и методику работы с командой. Для тех, кто хочет знать «Кто я» и «Какая команда мне нужна»">
+    <meta name="description" content="«Осознанная индивидуальность» – 3-дневный онлайн-тренинг, определяющий ключевые компетенции человека и методику работы с командой. Для тех, кто хочет знать «Кто я» и «Какая команда мне нужна»">
+{% endblock %}
+
 {% block main %}
     <section class="main-banner">
         <img src="{{ url_for('static', filename='img/individuality/individuality.jpg') }}" alt="Онлайн-тренинг «Осознанная индивидуальность»">

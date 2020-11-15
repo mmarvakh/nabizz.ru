@@ -1,5 +1,13 @@
 {% extends 'base.html' %}
 
+{% block meta %}
+    <meta property="og:title" content="Тренинг «Баланс целей»">
+    <meta property="og:site_name" content="Бизнес-школа «Навигатор»">
+    <meta property="og:url" content="https://nabizz.ru/goals">
+    <meta property="og:description" content="«Баланс целей» – 21-дневный марафон, в результате которого ты напишешь практический план по достижению целей под руководством тренера.">
+    <meta name="description" content="«Баланс целей» – 21-дневный марафон, в результате которого ты напишешь практический план по достижению целей под руководством тренера.">
+{% endblock %}
+
 {% block main %}
     <section class="main-banner">
         <img src="{{ url_for('static', filename='img/goals/goals.jpg') }}" alt="Онлайн-тренинг «Баланс целей»">

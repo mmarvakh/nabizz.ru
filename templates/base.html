@@ -20,6 +20,7 @@
             <meta name="description" content="«Навигатор» – проект, созданный для помощи людям быть счастливыми и финансово обеспеченными в реализации личного дела.">
         {% endblock %}
         <title>{{ title }}</title>
+        {% block reCaptcha %}{% endblock %}
     </head>
 
     <body>
@@ -33,7 +34,7 @@
                         <li class="link"><a href="{{ url_for('vebinars') }}">Вебинары</a></li>
                         <li class="link"><a href="{{ url_for('courses') }}">Курсы</a></li>
                         <li class="link"><a href="{{ url_for('consulting') }}">Консалтинг</a></li>
-                        <li class="link"><a href="{{ url_for('online_school') }}">Онлайн-школа</a></li>
+                        <li class="link"><a href="{{ url_for('school') }}">Онлайн-школа</a></li>
                     </ul>
                 </section>
             </section>
@@ -85,7 +86,7 @@
                         <a href="{{ url_for('consulting') }}">КОНСАЛТИНГ</a>
                     </li>
                     <li>
-                        <a href="{{ url_for('online_school') }}">ОНЛАЙН-ШКОЛА</a>
+                        <a href="{{ url_for('school') }}">ОНЛАЙН-ШКОЛА</a>
                     </li>
                 </ul>
             </div>
@@ -125,7 +126,7 @@
                         <li><a class="text-muted" href="{{ url_for('vebinars') }}">Вебинары</a></li>
                         <li><a class="text-muted" href="{{ url_for('courses') }}">Курсы</a></li>
                         <li><a class="text-muted" href="{{ url_for('consulting') }}">Консалтинг</a></li>
-                        <li><a class="text-muted" href="{{ url_for('online_school') }}">Онлайн-школа</a></li>
+                        <li><a class="text-muted" href="{{ url_for('school') }}">Онлайн-школа</a></li>
                     </ul>
                 </div>
                 <div class="col-6 col-md">
